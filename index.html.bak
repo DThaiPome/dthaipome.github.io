@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>index</title>
+    <style type="text/css">
+body {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  color: #eeeeee;
+  background-color: black;
+}
+
+#header {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: left;
+  margin-right: auto;
+  background-color: #142421;
+  padding: 0px 10px;
+  width: auto;
+}
+
+#container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333333;
+}
+
+#body {
+  background-color: #111111;
+  width: 100%;
+  text-align: left;
+  padding: 0px 0%;
+  margin: 0px;
+}
+
+#projects-header {
+  background-color: #999999;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  margin-right: auto;
+}
+
+#projects-grid {
+  display: grid;
+  -webkit-grid-auto-flow: column;
+  grid-auto-flow: column;
+  background-color: #999999;
+  padding: 1px 0px;
+  width: 100%;
+  -webkit-grid-template-rows: 100% 100%;
+  grid-template-rows: 100% 100%;
+}
+      
+.project img{
+  height: 150px;
+  width: 200px;
+}
+
+</style> </head>
+  <body class="project">
+    <div id="container">
+      <div id="header">
+        <h1> Ryan Gehrlein </h1>
+      </div>
+      <div id="body">
+        <div id="projects-header">
+          <h2> Projects </h2>
+        </div>
+        <div id="projects-grid">
+          <div class="project"> <img src="resources/yee.png"> </div>
+          <div class="project"> <img src="resources/BOBISNKI.png"> </div>
+          <div class="project"> <img src="resources/SLIME.png"> </div>
+          <div class="project"> <img src="resources/yee.png"> </div>
+          <div class="project"> <img src="resources/BOBISNKI.png"> </div>
+          <div class="project"> <img src="resources/SLIME.png"> </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
