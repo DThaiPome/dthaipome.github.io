@@ -15,14 +15,13 @@ body {
 }
       
 #body h2 {
- margin: 0px 0px 0px 10px; 
+ margin: 0px 0px 10px 0px; 
 }
       
 #header {
   font-size: xx-large;
   font-weight: bold;
   text-align: left;
-  margin-right: auto;
   background-color: #142421;
   padding: 0px 0px;
   width: auto;
@@ -30,8 +29,7 @@ body {
 
 #container {
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   background-color: #333333;
   margin: 0px;
   padding: 0px;
