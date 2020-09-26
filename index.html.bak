@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="resources/styles.css">
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <div id="header">
         <h1> Ryan Joseph Gehrlein </h1>
       </div>

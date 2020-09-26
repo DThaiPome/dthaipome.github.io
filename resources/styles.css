@@ -28,7 +28,7 @@ body {
   padding: 0pt;
 }
 
-#body {
+.body {
   background-color: #111111;
   width: 100%;
   text-align: left;
@@ -44,13 +44,26 @@ body {
   margin-right: auto;
 }
 
+.content-body {
+  background-color: #999999;
+  padding: 5pt 0pt;
+  width: 100%;
+}
+
+.project-body {
+  background-color: #999999;
+  padding: 5pt 0pt;
+  width: 100%;
+}
+
+.project-body img {
+  magin: auto;
+}
+
 #projects-grid {
   display: grid;
   -webkit-grid-auto-flow: column;
   grid-auto-flow: column;
-  background-color: #999999;
-  padding: 5pt 0pt;
-  width: 100%;
   -webkit-grid-template-rows: 100%;
   grid-template-rows: 100%;
 }
