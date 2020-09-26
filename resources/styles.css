@@ -51,14 +51,16 @@ body {
 }
 
 #mozilla-project-body {
-  text-align:-moz-center;
+  text-align: center;
 }
 
 .project-body {
   background-color: #999;
   padding: 5pt 0pt;
   width: 100%;
-  text-align: center;
+  text-align: -moz-center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #projects-grid {
