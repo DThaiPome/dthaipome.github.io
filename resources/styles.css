@@ -50,6 +50,10 @@ body {
   width: 100%;
 }
 
+#mozilla-project-body {
+  text-align:-moz-center;
+}
+
 .project-body {
   background-color: #999;
   padding: 5pt 0pt;
