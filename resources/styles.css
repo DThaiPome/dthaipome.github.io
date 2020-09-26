@@ -51,13 +51,10 @@ body {
 }
 
 .project-body {
-  background-color: #999999;
+  background-color: #999;
   padding: 5pt 0pt;
   width: 100%;
-}
-
-.project-body img {
-  magin: auto;
+  text-align: center;
 }
 
 #projects-grid {
@@ -101,4 +98,10 @@ body {
   color: #6baea1;
   text-align: center;
   font-style: italic;
+}
+
+img.centered-picture {
+  margin: auto;
+  width: 425pt;
+  height: 305pt;
 }

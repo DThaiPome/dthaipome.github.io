@@ -10,11 +10,11 @@
       <div id="header">
         <h1> Ryan Joseph Gehrlein </h1>
       </div>
-      <div id="body">
+      <div class="body">
         <div class="medium-header">
           <h2> Game Projects </h2>
         </div>
-        <div id="projects-grid">
+        <div id="projects-grid" class="content-body">
           <div class="project"> <a href="https://dthaipome.github.io/games-and-society/">
               <img src="resources/chlorophyll-preview.png"> </a> </div>
           <div class="project"> <a href="https://dthaipome.github.io/Spooky-Time-Bullet-Hell/">
