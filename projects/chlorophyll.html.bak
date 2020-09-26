@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ryan Gehrlein - Chlorophyll</title>
+    <link rel="stylesheet" href="./resources/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1> Ryan Joseph Gehrlein </h1>
+      </div>
+      <div id="body">
+        <div class="medium-header">
+          <h2> Chlorophyll </h2>
+        </div>
+        <div id="footer"> ryan.gehrlein@gmail.com<br>
+          203-274-0985 </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
