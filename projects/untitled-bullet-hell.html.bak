@@ -14,6 +14,12 @@
         <div class="medium-header">
           <h2> Untitled Bullet Hell </h2>
         </div>
+        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
+
+            src="../resources/chlorophyll-preview.png">
+          <p> <a href="https://dthaipome.github.io/games-and-society/"><i>Go to
+                Github page</i></a> </p>
+        </div>
         <div id="footer"> ryan.gehrlein@gmail.com<br>
           203-274-0985 </div>
       </div>
