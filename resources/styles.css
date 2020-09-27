@@ -24,12 +24,12 @@ body {
 .container {
   width: 800pt;
   margin: auto;
-  background-color: #333333;
+  background-color: #333;
   padding: 0pt;
 }
 
 .body {
-  background-color: #111111;
+  background-color: #111;
   width: 100%;
   text-align: left;
   padding: 0pt;
@@ -37,7 +37,7 @@ body {
 }
 
 .medium-header {
-  background-color: #999999;
+  background-color: #999;
   width: 100%;
   text-align: left;
   padding: 0pt;
@@ -45,7 +45,7 @@ body {
 }
 
 .content-body {
-  background-color: #999999;
+  background-color: #999;
   padding: 5pt 0pt;
   width: 100%;
 }
@@ -79,7 +79,7 @@ body {
   margin: 0pt 0pt 0pt 35pt;
   height: 150pt;
   width: 200pt;
-  background-color: #666666;
+  background-color: #666;
 }
 
 .project img {
@@ -89,19 +89,20 @@ body {
 
 #bio {
   width: 95%;
-  background-color: #444444;
+  background-color: #444;
   margin: auto;
   text-align: center;
   padding-top: 10pt;
   padding-bottom: 10pt;
 }
 
-#footer {
+.footer {
   width: 100%;
   margin: auto;
   padding-top: 10pt;
   padding-bottom: 10pt;
   color: #6baea1;
+  background-color: #111;
   text-align: center;
   font-style: italic;
 }

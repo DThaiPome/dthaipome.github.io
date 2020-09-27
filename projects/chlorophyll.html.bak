@@ -16,7 +16,8 @@
         </div>
         <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
 
-            src="../resources/chlorophyll-preview.png">
+            src="../resources/chlorophyll-preview.png"
+            style="width: 425pt; height: 305pt">
           <p> <a href="https://dthaipome.github.io/games-and-society/"><i>Go to
                 Github page</i></a> </p>
         </div>
