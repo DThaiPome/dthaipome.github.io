@@ -65,11 +65,8 @@ body {
 
 #projects-grid {
   display: grid;
-  -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
-  -webkit-grid-template-rows: 100% 100%;
   grid-template-rows: 100% 100%;
-  -webkit-grid-template-columns: 33% 33% 33%;
   grid-template-columns: 33% 33% 33%;
   width: 100%;
 }
@@ -118,7 +115,6 @@ img.centered-picture {
 #home-button {
   width: 48pt;
   height: 48pt;
-  float: right;
   margin-right: 10pt;
   margin-top: 2pt;
 }
