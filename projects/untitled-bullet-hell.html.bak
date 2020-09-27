@@ -8,16 +8,14 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="dthaipome.github.io"><img id="home-button" src="../resources/home.png"
-
-            alt="home" title="home"></a></h1>
+        <h1> Ryan Joseph Gehrlein <img id="home-button" src="../resources/home.png"
+            alt="home" title="home"></h1>
       </div>
       <div id="body">
         <div class="medium-header">
           <h2> Untitled Bullet Hell </h2>
         </div>
-        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
-
+        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
             src="../resources/bullet-hell-preview.png" style="width: 400pt; height: 211pt">
           <p> <a href="https://dthaipome.github.io/Spooky-Time-Bullet-Hell/"><i>Go
                 to Github page</i></a> </p>
@@ -26,6 +24,5 @@
           203-274-0985 </div>
       </div>
     </div>
-    
   </body>
 </html>
