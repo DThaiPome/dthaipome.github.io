@@ -83,7 +83,7 @@ body {
   margin: auto;
   height: 150pt;
   width: 200pt;
-  background-color: #666;
+  background-color: #666666;
 }
 
 .project img {
@@ -113,5 +113,13 @@ body {
 
 img.centered-picture {
   margin: auto;
+}
+
+#home-button {
+  width: 48pt;
+  height: 48pt;
+  float: right;
+  margin-right: 10pt;
+  margin-top: 2pt;
 }
 

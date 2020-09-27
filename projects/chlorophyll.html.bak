@@ -8,7 +8,9 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein </h1>
+        <h1> Ryan Joseph Gehrlein <a href="dthaipome.github.io"><img id="home-button" src="../resources/home.png"
+
+            alt="home" title="home"></a></h1>
       </div>
       <div id="body">
         <div class="medium-header">
@@ -16,12 +18,11 @@
         </div>
         <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
 
-            src="../resources/chlorophyll-preview.png"
-            style="width: 425pt; height: 305pt">
+            src="../resources/chlorophyll-preview.png" style="width: 425pt; height: 305pt">
           <p> <a href="https://dthaipome.github.io/games-and-society/"><i>Go to
                 Github page</i></a> </p>
         </div>
-        <div id="footer"> ryan.gehrlein@gmail.com<br>
+        <div class="footer"> ryan.gehrlein@gmail.com<br>
           203-274-0985 </div>
       </div>
     </div>
