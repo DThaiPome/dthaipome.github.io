@@ -8,16 +8,14 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
-
+        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
               alt="home" title="home"></a></h1>
       </div>
       <div id="body">
         <div class="medium-header">
           <h2> Narcoleptic Nummies </h2>
         </div>
-        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
-
+        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
             src="../resources/narcoleptic-preview.png" style="width: 400pt; height: 300pt">
           <p> <a href="https://kimin.itch.io/narcoleptic-nummies"><i>Play the
                 Game</i></a> </p>
@@ -64,7 +62,7 @@
             <ul>
               <li>Built objects in Unity and scripted them in C# using Visual
                 Studio.</li>
-              <li>Music produced with Sunvox.</li>
+              <li>Music produced with SunVox.</li>
               <li>Sounds edited with Audacity.</li>
             </ul>
           </div>
@@ -73,6 +71,5 @@
           203-274-0985 </div>
       </div>
     </div>
-    
   </body>
 </html>

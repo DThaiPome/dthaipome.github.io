@@ -22,7 +22,8 @@
           <div class="project"> <a href="/projects/fillball.html"> <img src="resources/fillball-preview.png">
             </a> </div>
           <div class="noproject"> </div>
-          <div class="project"> <a href="/projects/narcoleptic-nummies.html"> <img
+          <div class="project"> <a href="/projects/narcoleptic-nummies.html"> <img
+
                 src="resources/narcoleptic-preview.png"> </a> </div>
           <div class="noproject"> </div>
         </div>

@@ -43,7 +43,7 @@
               the graphics and user interfaces, I programmed the game mechanics
               and systems. In particular, I anticipated that we may expand on
               the project further. So, while the prototype only has one type of
-              assignment, a <i>Lights out!</i> puzzle, I structured the code in an
+              assignment, a <a href="https://en.wikipedia.org/wiki/Lights_Out_(game)"><i>Lights out!</i></a> puzzle, I structured the code in an
               heavily object-oriented manner such that new types of assignments
               can be added without rewriting any code.</p>
             <p> More details regarding the process of building the game can be
