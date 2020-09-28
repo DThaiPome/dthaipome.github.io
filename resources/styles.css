@@ -125,7 +125,7 @@ img.centered-picture {
   display: grid;
   -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
-  background-color: #444;
+  background-color: #444444;
   -webkit-grid-column-gap: 10%;
   grid-column-gap: 10%;
   -webkit-grid-template-columns: 45% 45%;
@@ -134,5 +134,13 @@ img.centered-picture {
 
 .project-description {
   margin: 10pt;
+}
+
+#project-built-with {
+  text-align: center;
+  background-color: #999999;
+  color: #222222;
+  margin: auto;
+  font-size: small;
 }
 
