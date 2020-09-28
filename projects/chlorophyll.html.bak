@@ -8,15 +8,20 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
+        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
+
               alt="home" title="home"></a></h1>
       </div>
       <div id="body">
         <div class="medium-header">
           <h2> Chlorophyll </h2>
         </div>
-        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
+        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
+
             src="../resources/chlorophyll-preview.png" style="width: 425pt; height: 305pt">
+          <p>
+            <a href="https://dthaipome.itch.io/chlorophyll-prototype"><i>Try out the prototype here</i></a>
+          </p>
           <p> <a href="https://dthaipome.github.io/games-and-society/"><i>Go to
                 Github page to read more</i></a> </p>
         </div>
@@ -48,10 +53,10 @@
           <div class="project-description">
             <h2> Responsibilities: </h2>
             <ul>
-              <li>Quickly designed game mechanics and system with 2 other
+              <li>Quickly designed game mechanics and systems with 2 other
                 groupmates.</li>
-              <li>Created a flexible assignment system that allowed new types of
-                assignments to be added seamlessly.</li>
+              <li>Created a flexible assignment system that allowed new
+                types of assignments to be added seamlessly.</li>
               <li>Orchestrated complex resource-manage systems that reacted to
                 many player actions and player mistakes over time.</li>
               <li>Organized tasks for the team and ensured that each team member
