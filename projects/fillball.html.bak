@@ -35,21 +35,12 @@
               I am learning how to program game behaviour and systems using C++,
               and I am familiarizing myself with the many features of UE4. Right
               now, 3 levels are planned for this project. </p>
+            <img class="centered-picture" src="../resources/fillball-shot.png">
           </div>
           <div class="project-description">
             <h2> Accomplishments: </h2>
             <ul>
-              <li>Fillball is a small, self-driven game project developed in
-                Unreal Engine 4. The player controls a ball that can change
-                between 4 colors by collecting small color pickups, passing
-                through colored hoops, or pressing colored buttons. Changing the
-                ball's color changes which paths are solid and passable; the
-                player must strategically manage their current color,
-                particularly if they wish to collect every color pickup. Through
-                this project, I am learning how to program game behaviour and
-                systems using C++, and I am familiarizing myself with the many
-                features of UE4. Right now, 3 levels are planned for this
-                project.</li>
+              <li>Built player controls and other game components using Unreal's Blueprint system.</li>
               <li>Designed &amp; implemented color-switching system in C++.</li>
               <li>Streamlined development by utilizing C++ objects and scripts
                 within other Blueprint components, reducing compile times and
@@ -63,11 +54,12 @@
               <li>Code written in C++ using Visual Studio.</li>
               <li>Some graphics assets made using GIMP.</li>
             </ul>
-          	<img class="centered-picture" src="../resources/fillball-shot.png"> </div>
           </div>
+        </div>
         <div class="footer"> ryan.gehrlein@gmail.com<br>
           203-274-0985 </div>
       </div>
     </div>
+    
   </body>
 </html>
