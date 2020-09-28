@@ -8,9 +8,9 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img
+        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
 
-              id="home-button" src="../resources/home.png" alt="home" title="home"></a></h1>
+              alt="home" title="home"></a></h1>
       </div>
       <div id="body">
         <div class="medium-header">
@@ -19,12 +19,60 @@
         <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
 
             src="../resources/narcoleptic-preview.png" style="width: 400pt; height: 300pt">
-          <p> <a href="https://kimin.itch.io/narcoleptic-nummies"><i>Go to Itch
-                page</i></a> </p>
+          <p> <a href="https://kimin.itch.io/narcoleptic-nummies"><i>Play the
+                Game</i></a> </p>
+        </div>
+        <div class="project-description-grid">
+          <div class="project-description">
+            <p> &tab; <i>Narcoleptic Nummies</i> is a video game project
+              made during Game Maker Tool Kit's Game Jam held online over the
+              summer of 2020. The player jumps through many levels, and every
+              ten or so seconds the level's layout and environment switch
+              between being "awake" and "asleep". In addition to producing
+              original music and sound effects, I designed and implemented the
+              dynamic sound system that would switch between two parallel
+              "waking" and "sleeping" versions of one original level soundtrack.
+            </p>
+            <p> &tab; I accomplished this by using Unity's flexible object
+              hierarchy system alongside principles of object-oriented design.
+              Specifically, I first created "looper" objects to seamlessly loop
+              one music track, by fading in a new playback of the track as the
+              previous one faded out. Then, I created "double looper" objects to
+              play music with two of these "loopers" simultaneously, with one
+              silenced, and fade between them when needed. I planned and
+              implemented this code under the time crunch of the game jam. And,
+              because the "double loopers" had such simple interfaces, the task
+              of integrating this functionality into the game was trivial. </p>
+            <p> &tab; The game went on to rank #465 in art &amp;
+              presentation, out of over 5000 submissions! </p>
+          </div>
+          <div class="project-description">
+            <h2> Responsibilities: </h2>
+            <ul>
+              <li>Produced 2 parallel versions of one original music track using
+                Sunvox, a "sleep" version and an "awake" version.</li>
+              <li>Designed &amp; implemented a dynamic music system that
+                switches between the "sleep" and "awake" versions of the music
+                in response to changes made during gameplay.</li>
+              <li>Engineered a means of looping both tracks seamlessly and
+                simultaneously, and also a means of fading smoothly between each
+                version.</li>
+              <li>Streamlined the integration of this music system by wrapping
+                all of this functionality under 1 C# method call in Unity. </li>
+            </ul>
+            <h2> Technology Used: </h2>
+            <ul>
+              <li>Built objects in Unity and scripted them in C# using Visual
+                Studio.</li>
+              <li>Music produced with Sunvox.</li>
+              <li>Sounds edited with Audacity.</li>
+            </ul>
+          </div>
         </div>
         <div class="footer"> ryan.gehrlein@gmail.com<br>
           203-274-0985 </div>
       </div>
     </div>
+    
   </body>
 </html>

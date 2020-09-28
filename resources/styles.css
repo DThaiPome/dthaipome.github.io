@@ -65,7 +65,9 @@ body {
 
 #projects-grid {
   display: grid;
+  -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
+  -webkit-grid-template-columns: 33% 33% 33%;
   grid-template-columns: 33% 33% 33%;
   width: 100%;
 }
@@ -116,5 +118,20 @@ img.centered-picture {
   height: 48pt;
   margin-right: 10pt;
   margin-top: 2pt;
+}
+
+.project-description-grid {
+  display: grid;
+  -webkit-grid-auto-flow: row;
+  grid-auto-flow: row;
+  background-color: #444;
+  -webkit-grid-column-gap: 10%;
+  grid-column-gap: 10%;
+  -webkit-grid-template-columns: 45% 45%;
+  grid-template-columns: 45% 45%;
+}
+
+.project-description {
+  margin: 10pt;
 }
 
