@@ -8,9 +8,9 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img
+        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
 
-              id="home-button" src="../resources/home.png" alt="home" title="home"></a></h1>
+              alt="home" title="home"></a></h1>
       </div>
       <div id="body">
         <div class="medium-header">
@@ -20,11 +20,61 @@
 
             src="../resources/bullet-hell-preview.png" style="width: 400pt; height: 211pt">
           <p> <a href="https://dthaipome.github.io/Spooky-Time-Bullet-Hell/"><i>Go
-                to Github page</i></a> </p>
+                to Github page to read more</i></a> </p>
+        </div>
+        <div class="project-description-grid">
+          <div class="project-description">
+            <h2> Summary: </h2>
+            <p>This project is a group-driven bullet hell game, in which the
+              flow of time depends on how fast the player is moving. When the
+              player stops moving, time stops progressing, and vice versa. The
+              project currently has no title, and is still in development. </p>
+            <p> I am currently responsible for most of the programming,
+              including player controls, enemy behaviours, and other systems.
+              The most prominent system present in the game is its way of
+              handling the many bullet and enemy objects that are constantly
+              spawned. In the game, enemies and the player can potentially fire
+              hundreds of bullets in a short period of time. Instantiating each
+              of these bullets on demand is extremely inefficient, and is bound
+              to cause massive frame rate issues. So, I designed a system that
+              generates a sufficient amount of every object needed to be spawned
+              before a level begins. When a bullet is fired, it is "spawned" by
+              taking a bullet from the pool of cloned objects, revealing it,
+              moving it to its origin position, and given a velocity and
+              direction to move along. When the bullet ends its life cycle, it
+              is hidden and stowed away until it is needed once more. variety. </p>
+            <p> I eventually expanded this system to be used for spawning
+              enemies and drops to be picked up by the player, too. With this
+              system, the limit on how many bullets the player and any enemy can
+              fire is many magnitudes higher, which allows for more </p>
+          </div>
+          <div class="project-description">
+            <h2> Responsibilities: </h2>
+            <ul>
+              <li>Quickly designed game mechanics and system with 2 other
+                groupmates.</li>
+              <li>Conceived an object-management system that spawns and stows
+                pre-generated copies of objects, overcoming the limitations of
+                generating hundreds of on-screen bullet objects on demand.</li>
+              <li>Conceived an object-management system that spawns and stows
+                pre-generated copies of objects, overcoming the limitations of
+                generating hundreds of on-screen bullet objects on demand.</li>
+              <li>Designed multiple scalable systems for the game, serving
+                purposes such as UI navigation, inventory management, and
+                dynamic enemy placement in the levels.</li>
+            </ul>
+            <h2> Technology Used: </h2>
+            <ul>
+              <li>Game developed in Unity.</li>
+              <li>Code written in C# using Visual Studio.</li>
+              <li>Git used for collaboration, hosted on GitHub.</li>
+            </ul>
+          </div>
         </div>
         <div class="footer"> ryan.gehrlein@gmail.com<br>
           203-274-0985 </div>
       </div>
     </div>
+    
   </body>
 </html>

@@ -24,17 +24,17 @@
         </div>
         <div class="project-description-grid">
           <div class="project-description">
-            <p> &#9; <i>Narcoleptic Nummies</i> is a video game project
-              made during Game Maker Tool Kit's Game Jam held online over the
-              summer of 2020. The player jumps through many levels, and every
-              ten or so seconds the level's layout and environment switch
-              between being "awake" and "asleep". In addition to producing
-              original music and sound effects, I designed and implemented the
-              dynamic sound system that would switch between two parallel
-              "waking" and "sleeping" versions of one original level soundtrack.
-            </p>
-            <p> &#9; I accomplished this by using Unity's flexible object
-              hierarchy system alongside principles of object-oriented design.
+            <h2> Summary: </h2>
+            <p> <i>Narcoleptic Nummies</i> is a video game project made during
+              Game Maker Tool Kit's Game Jam held online over the summer of
+              2020. The player jumps through many levels, and every ten or so
+              seconds the level's layout and environment switch between being
+              "awake" and "asleep". In addition to producing original music and
+              sound effects, I designed and implemented the dynamic sound system
+              that would switch between two parallel "waking" and "sleeping"
+              versions of one original level soundtrack. </p>
+            <p> I accomplished this by using Unity's flexible object hierarchy
+              system alongside principles of object-oriented design.
               Specifically, I first created "looper" objects to seamlessly loop
               one music track, by fading in a new playback of the track as the
               previous one faded out. Then, I created "double looper" objects to
@@ -43,8 +43,8 @@
               implemented this code under the time crunch of the game jam. And,
               because the "double loopers" had such simple interfaces, the task
               of integrating this functionality into the game was trivial. </p>
-            <p> &#9; The game went on to rank #465 in art &amp;
-              presentation, out of over 5000 submissions! </p>
+            <p> The game went on to rank #465 in art &amp; presentation, out of
+              over 5000 submissions! </p>
           </div>
           <div class="project-description">
             <h2> Responsibilities: </h2>
