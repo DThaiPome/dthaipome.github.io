@@ -9,7 +9,7 @@
     <div class="container">
       <div id="header">
         <h1> Ryan Joseph Gehrlein </h1>
-      </div>
+        Game Developer </div>
       <div class="body">
         <div class="medium-header">
           <h2> Game Projects </h2>
@@ -27,6 +27,8 @@
                 src="resources/narcoleptic-preview.png"> </a> </div>
           <div class="noproject"> </div>
         </div>
+        <div class="project-body" style="color=#222;"> Click on a thumbnail to learn more about the
+          project </div>
         <div id="project-built-with">
           <p> This website was built from scratch using BlueGriffon WYSIWYG Web
             Editor. It is hosted using GitHub pages. </p>
@@ -35,5 +37,6 @@
           203-274-0985 </div>
       </div>
     </div>
+    
   </body>
 </html>
