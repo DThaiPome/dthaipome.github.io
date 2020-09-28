@@ -19,11 +19,10 @@
         <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
 
             src="../resources/chlorophyll-preview.png" style="width: 425pt; height: 305pt">
-          <p>
-            <a href="https://dthaipome.itch.io/chlorophyll-prototype"><i>Try out the prototype here</i></a>
-          </p>
+          <p> <a href="https://dthaipome.itch.io/chlorophyll-prototype"><i>Try
+                out the prototype here</i></a> </p>
           <p> <a href="https://dthaipome.github.io/games-and-society/"><i>Go to
-                Github page to read more</i></a> </p>
+                GitHub page to read more</i></a> </p>
         </div>
         <div class="project-description-grid">
           <div class="project-description">
@@ -36,7 +35,7 @@
               regularly. Each assignment is a puzzle that must be fully solved.
               The player can partially solve it and still submit it, but this
               will cause the health of the plant to deteriorate faster. </p>
-            <p> This project was made as a final project for my Games &amp;
+            <p> This project was made with a small group as a final project for my Games &amp;
               Society class. The actual assignment was only to produce a game
               design document, which we did too, but we also wanted to go a step
               further and produce a functional, aesthetically-decorated
@@ -55,8 +54,8 @@
             <ul>
               <li>Quickly designed game mechanics and systems with 2 other
                 groupmates.</li>
-              <li>Created a flexible assignment system that allowed new
-                types of assignments to be added seamlessly.</li>
+              <li>Created a flexible assignment system that allowed new types of
+                assignments to be added seamlessly.</li>
               <li>Orchestrated complex resource-manage systems that reacted to
                 many player actions and player mistakes over time.</li>
               <li>Organized tasks for the team and ensured that each team member
@@ -75,5 +74,6 @@
         <div class="project-description-grid"> </div>
       </div>
     </div>
+    
   </body>
 </html>
