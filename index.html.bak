@@ -12,7 +12,7 @@
         Game Developer
         <div id="navigation-bar">
           <div class="navigation-link"> About </div>
-          <div class="navigation-link"> Resume </div>
+          <div class="navigation-link"> <a href="/resources/ryan-gehrlein-resume.pdf">Resume</a> </div>
           <div class="navigation-link"> Contact </div>
         </div>
       </div>
@@ -31,7 +31,8 @@
             </a> <br>
             <b>Fillball</b> - Self-driven 3D Game in UE4</div>
           <div class="noproject"> </div>
-          <div class="project"> <a href="/projects/narcoleptic-nummies.html"> <img
+          <div class="project"> <a href="/projects/narcoleptic-nummies.html"> <img
+
                 src="resources/narcoleptic-preview.png"> </a> <br>
             <b>Narcoleptic Nummies</b> - GMTK Game Jam 2020</div>
           <div class="noproject"> </div>
