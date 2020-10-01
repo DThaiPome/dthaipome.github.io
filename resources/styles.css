@@ -150,7 +150,15 @@ img.centered-picture {
   grid-auto-flow: row;
   display: grid;
   text-align: center;
-  margins: 0pt 10pt;
-  background-color: #222;
+  background-color: #222222;
+}
+
+.navigation-link {
+  padding: 10pt 0pt;
+  font-size: medium;
+  border-width: 0pt;
+  border-style: solid;
+  border-radius: 0px / 0pt;
+  text-decoration: underline overline;
 }
 
