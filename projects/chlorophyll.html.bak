@@ -11,6 +11,7 @@
         <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
 
               alt="home" title="home"></a></h1>
+        Game Developer
       </div>
       <div id="body">
         <div class="medium-header">
@@ -43,9 +44,10 @@
               the graphics and user interfaces, I programmed the game mechanics
               and systems. In particular, I anticipated that we may expand on
               the project further. So, while the prototype only has one type of
-              assignment, a <a href="https://en.wikipedia.org/wiki/Lights_Out_(game)"><i>Lights out!</i></a> puzzle, I structured the code in an
-              heavily object-oriented manner such that new types of assignments
-              can be added without rewriting any code.</p>
+              assignment, a <a href="https://en.wikipedia.org/wiki/Lights_Out_%28game%29"><i>Lights
+                  out!</i></a> puzzle, I structured the code in an heavily
+              object-oriented manner such that new types of assignments can be
+              added without rewriting any code.</p>
             <p> More details regarding the process of building the game can be
               found at the linked GitHub page. </p>
           </div>
