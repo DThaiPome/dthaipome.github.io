@@ -148,8 +148,8 @@ img.centered-picture {
 }
 
 #navigation-bar {
-  -webkit-grid-template-columns: 33% 33% 33%;
-  grid-template-columns: 33% 33% 33%;
+  -webkit-grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
   -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
   display: grid;

@@ -8,10 +8,14 @@
   <body>
     <div class="container">
       <div id="header">
-        <h1> Ryan Joseph Gehrlein <a href="/index.html"><img id="home-button" src="../resources/home.png"
-
-              alt="home" title="home"></a></h1>
+        <h1> Ryan Joseph Gehrlein </h1>
         Game Developer
+        <div id="navigation-bar">
+          <div class="navigation-link"> About </div>
+          <div class="navigation-link"> <a href="/resources/ryan-gehrlein-resume.pdf">Resume</a>
+          </div>
+          <div class="navigation-link"> Contact </div>
+        </div>
       </div>
       <div id="body">
         <div class="medium-header">
@@ -76,6 +80,5 @@
         <div class="project-description-grid"> </div>
       </div>
     </div>
-    
   </body>
 </html>
