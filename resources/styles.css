@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #eee;
+  color: #eeeeee;
 }
 
 #header h1 {
@@ -148,7 +148,9 @@ img.centered-picture {
 }
 
 #navigation-bar {
+  -webkit-grid-template-columns: 25% 25% 25% 25%;
   grid-template-columns: 25% 25% 25% 25%;
+  -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
   display: grid;
   text-align: center;
@@ -163,3 +165,14 @@ img.centered-picture {
   border-radius: 0px / 0pt;
   text-decoration: underline overline;
 }
+
+.informational-container {
+  background-color: #222222;
+}
+
+#contact-body {
+  font-size: x-large;
+  text-align: center;
+  padding: 10pt;
+}
+
