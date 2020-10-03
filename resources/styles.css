@@ -176,3 +176,15 @@ img.centered-picture {
   padding: 10pt;
 }
 
+#bio-body {
+  display: grid;
+  -webkit-grid-auto-flow: row;
+  grid-auto-flow: row;
+  -webkit-grid-template-columns: 45% 45%;
+  grid-template-columns: 45% 45%;
+  text-align: center;
+  font-size: large;
+  margin: 10pt;
+  padding: 10pt;
+}
+

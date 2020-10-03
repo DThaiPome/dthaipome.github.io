@@ -9,7 +9,7 @@
     <div class="container">
       <div id="header">
         <h1> Ryan Joseph Gehrlein </h1>
-        Game Developer
+        Game Programmer &amp; Software Engineer
         <div id="navigation-bar">
           <div class="navigation-link"> <a href="/index.html">Home</a> </div>
           <div class="navigation-link"> <a href="/info/about.html">About</a> </div>
@@ -19,6 +19,18 @@
           </div>
         </div>
       </div>
+      <div id="bio-body" class="informational-background">
+        <p>Hi, I am Ryan Gehrlein! I am a second-year CS and Game Development
+          student at Northeastern University, and I aspire to get involved in
+          the game industry as a programmer. I have taught myself the tools used
+          to develop games, and I have spent my time at Northeastern University
+          pushing this hobby towards a professional career in the field. Games
+          have played an indispensable role in my individual and social
+          development throughout my life. I hope to make games that inspire,
+          that educate, and that can make memories. </p>
+        <div class="centered-image">
+        <img src="../resources/ryan.png" style="width: 250pt; height: 250pt;">
+        </div> </div>
     </div>
     <p><br>
     </p>
