@@ -188,3 +188,10 @@ img.centered-picture {
   padding: 10pt;
 }
 
+#code-body {
+  text-align: center;
+  font-size: large;
+  margin: 10pt;
+  padding: 10pt;
+}
+
