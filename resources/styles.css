@@ -72,9 +72,11 @@ a {
   display: grid;
   -webkit-grid-auto-flow: row;
   grid-auto-flow: row;
-  -webkit-grid-template-columns: 33% 33% 33%;
-  grid-template-columns: 33% 33% 33%;
+  -webkit-grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   width: 100%;
+  -webkit-grid-template-rows: 33% 33%;
+  grid-template-rows: 33% 33%;
 }
 
 .project {
@@ -90,8 +92,8 @@ a {
 }
 
 .project img {
-  height: 150pt;
-  width: 200pt;
+  height: 225pt;
+  width: 300pt;
 }
 
 #bio {
