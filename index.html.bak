@@ -17,6 +17,8 @@
           </div>
           <div class="navigation-link"> <a href="/info/contact.html">Contact</a>
           </div>
+          <div class="navigation-link"> <a href="/code-samples.html">Featured
+              Code</a> </div>
         </div>
       </div>
       <div class="body">
@@ -40,8 +42,9 @@
             <b>Narcoleptic Nummies</b> - GMTK Game Jam 2020</div>
           <div class="noproject"> </div>
         </div>
+        
         <div id="mozilla-project-body" class="project-body" style="color: #222;">
-          Click on a thumbnail to learn more about the project </div>
+          <b>Click on a thumbnail to learn more about the project</b></div>
         <div id="project-built-with">
           <p> This website was built from scratch using BlueGriffon WYSIWYG Web
             Editor. It is hosted using GitHub pages. </p>
