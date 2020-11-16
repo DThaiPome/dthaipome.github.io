@@ -34,28 +34,8 @@
         <div class="project-description-grid">
           <div class="project-description">
             <h2> Summary: </h2>
-            <p>This project is a group-driven bullet hell game, in which the
-              flow of time depends on how fast the player is moving. When the
-              player stops moving, time stops progressing, and vice versa. The
-              project currently has no title, and is still in development. </p>
-            <p> I am currently responsible for most of the programming,
-              including player controls, enemy behaviours, and other systems.
-              The most prominent system present in the game is its way of
-              handling the many bullet and enemy objects that are constantly
-              spawned. In the game, enemies and the player can potentially fire
-              hundreds of bullets in a short period of time. Instantiating each
-              of these bullets on demand is extremely inefficient, and is bound
-              to cause massive frame rate issues. So, I designed a system that
-              generates a sufficient amount of every object needed to be spawned
-              before a level begins. When a bullet is fired, it is "spawned" by
-              taking a bullet from the pool of cloned objects, revealing it,
-              moving it to its origin position, and given a velocity and
-              direction to move along. When the bullet ends its life cycle, it
-              is hidden and stowed away until it is needed once more. variety. </p>
-            <p> I eventually expanded this system to be used for spawning
-              enemies and drops to be picked up by the player, too. With this
-              system, the limit on how many bullets the player and any enemy can
-              fire is many magnitudes higher, which allows for more </p>
+            <p>This project is a group-driven bullet hell game, in which the flow of time depends on how fast the player is moving. When the player stops moving, time stops progressing, and vice versa. The project currently has no title, and is unfinished. This project features several systems that are feature-complete, such as a bullet-pooling system to save computer resources, and a UI navigation system used for the level select screen. </p>
+            <p> This project serves as a proof-of-concept for bullet hell game mechanics. My group and I collaborated on some design aspects of the game, and the game features their art, too. I primarily focused on the game's code and construction within Unity. I designed and developed systems for level navigation, UI navigation, an item shop, and bullet-pooling. The latter system seeks to reduce the lag that comes from handling hundreds of bullet objects by instantiating the objects before a level begins, rather than spawning them on-demand. This way, the cost to fire a bullet object in the game is reduced to near-zero, allowing for greater freedom of design. </p>
           </div>
           <div class="project-description"> <img src="/resources/bullet-hell-gameplay.gif"
 
@@ -67,12 +47,7 @@
               <li>Conceived an object-management system that spawns and stows
                 pre-generated copies of objects, overcoming the limitations of
                 generating hundreds of on-screen bullet objects on demand.</li>
-              <li>Conceived an object-management system that spawns and stows
-                pre-generated copies of objects, overcoming the limitations of
-                generating hundreds of on-screen bullet objects on demand.</li>
-              <li>Designed multiple scalable systems for the game, serving
-                purposes such as UI navigation, inventory management, and
-                dynamic enemy placement in the levels.</li>
+              <li>Applied object-oriented design strategies to create scalable game systems, serving purposes such as UI navigation, inventory management, and dynamic enemy placement in the levels.</li>
             </ul>
             <h2> Technology Used: </h2>
             <ul>
