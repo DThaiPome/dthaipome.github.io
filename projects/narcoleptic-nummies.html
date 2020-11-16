@@ -25,8 +25,7 @@
         <div class="medium-header">
           <h2> Narcoleptic Nummies </h2>
         </div>
-        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
-
+        <div id="mozilla-project-body" class="project-body"><img class="centered-picture"
             src="../resources/narcoleptic-preview.png" style="width: 400pt; height: 300pt">
           <p> <a href="https://kimin.itch.io/narcoleptic-nummies"><i>Play the
                 Game</i></a> </p>
@@ -41,41 +40,31 @@
               "awake" and "asleep". In addition to producing original music and
               sound effects, I designed and implemented the dynamic sound system
               that would switch between two parallel "waking" and "sleeping"
-              versions of one original level soundtrack. </p>
-            <p> I accomplished this by using Unity's flexible object hierarchy
-              system alongside principles of object-oriented design.
-              Specifically, I first created "looper" objects to seamlessly loop
-              one music track, by fading in a new playback of the track as the
-              previous one faded out. Then, I created "double looper" objects to
-              play music with two of these "loopers" simultaneously, with one
-              silenced, and fade between them when needed. I planned and
-              implemented this code under the time crunch of the game jam. And,
-              because the "double loopers" had such simple interfaces, the task
-              of integrating this functionality into the game was trivial. </p>
+              versions of one original level soundtrack. I accomplished this by
+              using Unity's flexible object hierarchy system alongside
+              principles of object-oriented design, in order to make code that
+              could be easily utilized by my teammates. The entire core
+              functionality of this music system was wrapped under a single
+              method, allowing for seamless integration into the game's core
+              code.</p>
             <p> The game went on to rank #465 in art &amp; presentation, out of
               over 5000 submissions! </p>
-            <iframe scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1091114047&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
-
+            <iframe scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1091114047&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
               height="450" frameborder="no" width="100%"></iframe>
-            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a
-
-                href="https://soundcloud.com/user-567613277" title="DThaiPome" target="_blank"
-
-                style="color: #cccccc; text-decoration: none;">DThaiPome</a> · <a
-
-                href="https://soundcloud.com/user-567613277/sets/narcoleptic-nummies-ost"
-
+            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a
+                href="https://soundcloud.com/user-567613277" title="DThaiPome" target="_blank"
+                style="color: #cccccc; text-decoration: none;">DThaiPome</a> · <a
+                href="https://soundcloud.com/user-567613277/sets/narcoleptic-nummies-ost"
                 title="Narcoleptic Nummies - OST" target="_blank" style="color: #cccccc; text-decoration: none;">Narcoleptic
                 Nummies - OST</a></div>
           </div>
           <div class="project-description">
-            <div class="project-description"> <img src="/resources/narcoleptic-gameplay.gif"
-
+            <div class="project-description"> <img src="/resources/narcoleptic-gameplay.gif"
                 height="300pt" width="450pt"></div>
             <h2> Responsibilities: </h2>
             <ul>
               <li>Produced 2 parallel versions of one original music track using
-                Sunvox, a "sleep" version and an "awake" version.</li>
+                SunVox, a "sleep" version and an "awake" version.</li>
               <li>Designed &amp; implemented a dynamic music system that
                 switches between the "sleep" and "awake" versions of the music
                 in response to changes made during gameplay.</li>
