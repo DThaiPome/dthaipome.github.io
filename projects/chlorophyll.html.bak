@@ -59,7 +59,9 @@
             <p> More details regarding the process of building the game can be
               found at the linked GitHub page. </p>
           </div>
-          <div class="project-description">
+          <div class="project-description"> <img src="/resources/chlorophyll-gameplay.gif"
+
+              height="300pt" width="450pt">
             <h2> Responsibilities: </h2>
             <ul>
               <li>Quickly designed game mechanics and systems with 2 other
