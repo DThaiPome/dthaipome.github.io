@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <title>RIP Prototype</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="dist/app.js"></script>
   </head>
   <body>
-    <div>Thank you for trying out my prototype! Your feedback would be highly appreciated: consider filling out <a href="https://forms.gle/9hihnsUZ5Fxyj3J48">this quick & anonymous form</a> after you finish playing :)</div>
-    <div id="game"></div>
-    <div id="messageText"></div>
-    <div id="inventoryText"></div>
-    <div>-------------------------------------------------------------------------------------------------------------------------------------------------</div>
-    <div id="controlsText">WASD to move, SPACE to zoom in/out, arrow keys to place a seed. Each arrow key is a different directional seed.</div>
-    <div id="infoText">Collect small brown squares and large pink squares for more seeds and keys!</div>
-    <div id="infoText">You can't do some things if you are falling!</div>
+    <div class="grid-container">
+      <div>
+        <div id="messageText" class="message-text"></div>
+        <div id="game"></div>
+        <div>Thank you for trying out my prototype! Your feedback would be
+          highly appreciated: consider filling out <a href="https://forms.gle/9hihnsUZ5Fxyj3J48">this
+            quick &amp; anonymous form</a> after you finish playing :)</div>
+      </div>
+      <div>
+        <div class="message-text">INVENTORY</div>
+        <div id="inventoryText" class="inventory-text"></div>
+        <div id="selectedItemText" class="inventory-text selected-text"></div>
+        <div class="message-text">INFORMATION</div>
+        <div id="controlsText"><b>WASD</b> to move <br> <b>SPACE</b> to zoom in/out <br> <b>ARROW KEYS</b> to select an item from your inventory <br> <b>SHIFT</b> to use the selected item.</div>
+        <div id="infoText"><b>You can't collect or use seeds while falling!</b></div>
+        <div id="infoText">Collecting <b>BROWN SQUARES</b> gives you more seeds</div>
+        <div id="infoText">Collecting <b>PINK SQUARES</b> gives you high jump fruit or small keys</div>
+        <div id="infoText"><b>PURPLE STARS</b> can be unlocked with small keys</div>
+        <div id="infoText">Collecting <b>THE BIG YELLOW STAR</b> is your goal!</div>
+      </div>
+    </div>
   </body>
 </html>
