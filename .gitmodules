@@ -1,0 +1,3 @@
+[submodule "projects/pixelmon-iv-calculator"]
+	path = projects/pixelmon-iv-calculator
+	url = https://github.com/DThaiPome/pixelmon-iv-calculator.git
