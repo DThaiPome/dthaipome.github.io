@@ -3,17 +3,14 @@
             <div class="header-title">Ryan Gehrlein</div>
             <div class="subheader-title">Game Programmer &amp; Software Engineer</div>
             <hr noshade>
-            <div class="links-container">
-                <span class="link-box" v-for="(button, idx) in buttons" :key="idx">
-                    <span class="link-text" v-text="button"/>
-                    <span class="vertical-rule" v-if="idx != buttons.length - 1"/>
-                </span>
-            </div>
+            <header-nav-toolbar/>
         </div>
 </template>
 
 <script>
+import HeaderNavToolbar from './HeaderNavToolbar.vue';
 export default {
+  components: { HeaderNavToolbar },
     props: {
         pageName: {
             type: String,
@@ -57,19 +54,6 @@ export default {
 
         hr {
             color: @BORDER-COLOR;
-        }
-        
-        .links-container {
-            .link-box {
-                .link-text {
-                    margin: 10pt;
-                }
-
-                .vertical-rule {
-                    border: 1pt solid @BORDER-COLOR;
-                    height: 40pt;
-                }
-            }
         }
     }
 </style>
