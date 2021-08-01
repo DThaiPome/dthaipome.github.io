@@ -20,8 +20,10 @@ export default {
 @import './assets/style/colors';
 
 body {
-  background-image: url('./assets/trippy background.png');
-  //background-color: @BG-COLOR-2;
+  background-image: url('./assets/trippy background-small.png'), 
+    url('./assets/trippy background-smaller.png'), 
+    url('./assets/trippy background.png');
+  background-blend-mode: color;
   color: @TEXT-COLOR;
   margin: 0pt;
 }
