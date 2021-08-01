@@ -1,14 +1,16 @@
 <template>
-    <div class="header-container">
-            <div class="header-title">Ryan Gehrlein</div>
-            <div class="subheader-title">Game Programmer &amp; Software Engineer</div>
-            <hr noshade>
+    <div v-if="headerShowHeader" class="header-container">
+            <div v-if="headerShowTitle" class="header-title">Ryan Gehrlein</div>
+            <div v-if="headerShowTitle" class="subheader-title">Game Programmer &amp; Software Engineer</div>
+            <hr v-if="headerShowTitle" noshade>
             <header-nav-toolbar/>
         </div>
 </template>
 
 <script>
 import HeaderNavToolbar from './HeaderNavToolbar.vue';
+import { mapGetters } from 'vuex';
+
 export default {
   components: { HeaderNavToolbar },
     props: {
@@ -18,15 +20,10 @@ export default {
         }
     },
     computed: {
-        buttons: () => {
-            return [
-                'Home',
-                'About',
-                'Resume',
-                'Contact',
-                'Featured Code'
-            ];
-        }
+        ...mapGetters('global', [
+            'headerShowTitle',
+            'headerShowHeader'
+        ])
     }
 }
 </script>

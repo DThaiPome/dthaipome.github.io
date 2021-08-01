@@ -3,16 +3,18 @@
     <!--img alt="Vue logo" src="./assets/logo.png"-->
     <global-header/>
     <router-view></router-view>
+    <global-footer/>
   </div>
 </template>
 
 <script>
-import GlobalHeader from './components/GlobalHeader.vue'
+import GlobalHeader from './components/GlobalHeader.vue';
+import GlobalFooter from './components/GlobalFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    GlobalHeader
+    GlobalHeader, GlobalFooter
   }
 }
 </script>
@@ -33,6 +35,8 @@ body {
   animation-name: move;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+
+  height: 100%;
 }
 
 #app {
