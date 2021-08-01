@@ -20,7 +20,8 @@ export default {
 @import './assets/style/colors';
 
 body {
-  background-color: @BG-COLOR-2;
+  background-image: url('./assets/Background.png');
+  //background-color: @BG-COLOR-2;
   color: @TEXT-COLOR;
   margin: 0pt;
 }
