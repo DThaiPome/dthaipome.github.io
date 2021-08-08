@@ -14,7 +14,7 @@
         color: @TEXT-COLOR-2;
         width: 100%;
 
-        position: absolute;
+        position: fixed;
         bottom: 0;
     }
 </style>
