@@ -38,6 +38,7 @@ export default {
         border-radius: 40pt;
         width: auto;
         margin: auto;
+        margin-bottom: 15pt;
         padding: 10pt;
 
         .header-title {

@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <!--img alt="Vue logo" src="./assets/logo.png"-->
-    <global-header/>
-    <router-view></router-view>
-    <global-footer/>
+    <div ref="container">
+      <global-header/>
+      <router-view></router-view>
+    </div>
+    <global-footer ref="footer"/>
   </div>
 </template>
 
@@ -11,10 +13,46 @@
 import GlobalHeader from './components/GlobalHeader.vue';
 import GlobalFooter from './components/GlobalFooter.vue';
 
+import { mapMutations } from 'vuex';
+import { SET_APP_EL } from './store/global.store';
+
 export default {
   name: 'App',
   components: {
     GlobalHeader, GlobalFooter
+  },
+  mounted() {
+    this[SET_APP_EL](this);
+    this.initHandler();
+    this.$nextTick(this.repositionFooter);
+  },
+  beforeDestroy() {
+    this.destroyHandler();
+  },
+  watch: {
+    $route() {
+      this.$nextTick(this.repositionFooter);
+    }
+  },
+  computed: {
+    container() {
+      return this.$refs.container;
+    },
+    footer() {
+      return this.$refs.footer;
+    }
+  },
+  methods: {
+    ...mapMutations('global', [ SET_APP_EL ]),
+    initHandler() {
+      window.addEventListener('resize', this.repositionFooter);
+    },
+    destroyHandler() {
+      window.removeEventListener('resize', this.repositionFooter);
+    },
+    repositionFooter() {
+      this.footer.reposition(this.container.offsetHeight);
+    }
   }
 }
 </script>
@@ -28,6 +66,7 @@ body {
     url('./assets/trippy background-smaller.png'), 
     url('./assets/trippy background.png');
   background-blend-mode: color;
+  background-attachment: fixed;
   color: @TEXT-COLOR;
   margin: 0pt;
 
