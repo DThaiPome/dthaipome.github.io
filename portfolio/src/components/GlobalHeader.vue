@@ -40,6 +40,7 @@ export default {
         margin: auto;
         margin-bottom: 15pt;
         padding: 10pt;
+        overflow: hidden;
 
         .header-title {
             font-weight: bolder;
