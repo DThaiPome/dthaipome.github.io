@@ -4,7 +4,7 @@
             <p v-for="(block, index) in aboutParagraphs" :key="index" v-text="block" />
         </div>
         <div class="about-image">
-            <img ref="imgEl" :src="aboutImage" />
+            <img :src="aboutImage" v-fix-footer-on-load />
         </div>
     </div>
 </template>
@@ -12,25 +12,19 @@
 <script>
 import aboutContent from '../assets/json/main-content';
 
-import { mapActions } from 'vuex';
+import FixFooterOnLoad from '../directives/FixFooterOnLoad';
 
 export default {
+    directives: {
+        FixFooterOnLoad
+    },
     computed: {
         aboutParagraphs() {
             return aboutContent.about.body;
         },
         aboutImage() {
             return require('@/assets/BARRA R A AR AR A RAR A.png');
-        },
-        imgEl() {
-            return this.$refs.imgEl;
         }
-    },
-    mounted() {
-        this.imgEl.onload = this.repositionFooter;
-    },
-    methods: {
-        ...mapActions('global', [ 'repositionFooter' ]),
     }
 }
 
@@ -47,7 +41,7 @@ export default {
         background-color: @BG-COLOR;
         border: 4pt solid @BORDER-COLOR;
         border-radius: 40pt;
-        min-width: 720pt;
+        min-width: 80%;
         
         div {
             margin: 20pt;

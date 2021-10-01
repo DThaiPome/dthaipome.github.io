@@ -23,7 +23,7 @@ export default {
     methods: {
         reposition(height) {
             const viewHeight = window.innerHeight
-            this.addFooterScroll = viewHeight < height;
+            this.addFooterScroll = viewHeight < height + this.container.offsetHeight;
             const style = this.addFooterScroll
                 ? `top: ${height}px`
                 : ``;
