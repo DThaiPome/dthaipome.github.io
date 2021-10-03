@@ -6,5 +6,9 @@ export default [
     {
         label: 'About',
         route: '/about'
+    },
+    {
+        label: 'Projects',
+        route: '/projects'
     }
 ];

@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import AboutPage from "../views/AboutPage.vue";
+import ProjectPage from "../views/ProjectPage.vue";
 import store from '../store/index';
 import { 
   SET_HEADER_SHOW_HEADER,
@@ -20,6 +21,11 @@ const routes = [
     path: "/about",
     name: "About",
     component: AboutPage
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: ProjectPage
   },
 ];
 
