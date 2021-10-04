@@ -1,9 +1,9 @@
 <template>
     <div id="projects-container">
         <div class="panel" v-for="panel in panels" :key="panel.id">
-            <img class="project-img" :src="panel.imgSrc" v-fix-footer-on-load /> <br>
-            <router-link :to="`/projects/${panel.id}`" tag="a">
-                {{panel.title}}
+            <router-link :to="`/projects/${panel.id}`">
+                <img class="project-img" :src="panel.imgSrc" v-fix-footer-on-load /> <br>
+                <a v-text="panel.title" />
             </router-link> <br>
             <div v-text="panel.blurb" />
         </div>

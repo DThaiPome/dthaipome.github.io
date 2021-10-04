@@ -32,7 +32,9 @@ const state = {
 };
 
 const getters = {
-    projects: state => state.projects
+    projects: state => {
+        return state.projects;
+    }
 };
 
 const store = {

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import AboutPage from "../views/AboutPage.vue";
 import ProjectPage from "../views/ProjectPage.vue";
+import ProjectDetails from "../views/ProjectDetails.vue";
 import store from '../store/index';
 import { 
   SET_HEADER_SHOW_HEADER,
@@ -27,6 +28,11 @@ const routes = [
     name: "Projects",
     component: ProjectPage
   },
+  {
+    path: "/projects/:id",
+    name: "Project Details",
+    component: ProjectDetails
+  }
 ];
 
 const router = new VueRouter({
@@ -39,7 +45,7 @@ router.afterEach((to) => {
 
 function updateHeaderVisibility(toName) {
   const pagesWithHeaderTitle = [
-      'Home'
+      'Home', 'About', 'Projects'
   ];
   const pagesWithoutHeader = [];
   store.commit(`global/${SET_HEADER_SHOW_TITLE}`, pagesWithHeaderTitle.includes(toName));
