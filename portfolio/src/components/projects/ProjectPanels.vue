@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import FixFooterOnLoad from '../directives/FixFooterOnLoad';
+import FixFooterOnLoad from '../../directives/FixFooterOnLoad';
 import { mapGetters } from 'vuex';
 
 export default {

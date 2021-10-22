@@ -5,8 +5,10 @@
             <span class="project-header" v-text="project.title" />
             <div id="details-top">
                 <img id="details-image" :src="project.imgSrc" v-fix-footer-on-load />
+                <div v-html="imageCaption" />
             </div>
             <hr noshade />
+            <component :is="`project-details-body-${project.bodyComp}`" />
         </template>
     </common-body>
 </template>
@@ -14,6 +16,9 @@
 <script>
 import CommonBody from '../components/CommonBody.vue';
 import FixFooterOnLoad from '../directives/FixFooterOnLoad';
+import ProjectDetailsBodyA from '../components/projects/ProjectDetailsBodyA.vue';
+import ProjectDetailsBodyB from '../components/projects/ProjectDetailsBodyB.vue';
+import ProjectDetailsBodyC from '../components/projects/ProjectDetailsBodyC.vue';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -21,7 +26,10 @@ export default {
         FixFooterOnLoad
     },
     components: {
-        CommonBody
+        CommonBody,
+        ProjectDetailsBodyA,
+        ProjectDetailsBodyB,
+        ProjectDetailsBodyC
     },
     data() {
         return {
@@ -33,6 +41,9 @@ export default {
         ...mapGetters('project', [ 'projects']),
         id() {
             return this.$route.params.id;
+        },
+        imageCaption() {
+            return 'Lol click this to do stuff';
         }
     },
     beforeMount() {
@@ -55,7 +66,8 @@ export default {
     #details-top {
         width: 100%;
         display: flex;
-        align-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     #details-image {

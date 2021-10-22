@@ -6,7 +6,7 @@
 
 <script>
 import CommonBody from '../components/CommonBody.vue';
-import ProjectPanels from '../components/ProjectPanels.vue';
+import ProjectPanels from '../components/projects/ProjectPanels.vue';
 export default {
     components: {
         CommonBody,
