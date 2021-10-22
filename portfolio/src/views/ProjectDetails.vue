@@ -8,7 +8,8 @@
                 <div v-html="imageCaption" />
             </div>
             <hr noshade />
-            <component :is="`project-details-body-${project.bodyComp}`" />
+            <component :is="`project-details-body-${project.bodyComp}`"
+                       :project="project" />
         </template>
     </common-body>
 </template>
