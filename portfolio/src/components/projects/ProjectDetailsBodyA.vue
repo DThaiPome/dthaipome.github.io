@@ -2,7 +2,7 @@
     <div id="description-container">
         <div class="description-panel">
             <h3> Summary </h3>
-            <p class="description-text" v-text="project.summary" />
+            <div class="description-text" v-html="project.summary" />
             <img class="details-body-image" 
                  v-if="project.bodyImgSrcA"
                  :src="project.bodyImgSrcA" 
@@ -13,7 +13,7 @@
                  v-if="project.bodyImgSrcB"
                  :src="project.bodyImgSrcB" 
                  v-fix-footer-on-load />
-            <h3> Responsibilities </h3>
+            <h3> Accomplishments </h3>
             <common-unordered-list :items="project.responsibilities" 
                        :classes="description-text" />
             <br>

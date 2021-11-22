@@ -2,8 +2,8 @@
     <div id="description-container">
         <div class="description-panel">
             <h3> Summary </h3>
-            <p class="description-text" v-text="project.summary" />
-            <h3> Responsibilities </h3>
+            <div class="description-text" v-html="project.summary" />
+            <h3> Accomplishments </h3>
             <common-unordered-list :items="project.responsibilities" 
                        :classes="description-text" />
             <br>
