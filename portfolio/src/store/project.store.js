@@ -21,8 +21,8 @@ const projects = [
             'Mixamo for character animations',
             'Git for collaboration'
         ],
-        bodyImgSrcA: require('@/assets/img/projects/Trail_Of_Crumbs.png'),
-        bodyImgSrcB: require('@/assets/img/projects/Trail_Of_Crumbs.png')
+        bodyImgSrcA: require('@/assets/img/projects/Trail_Of_Crumbs-1.gif'),
+        bodyImgSrcB: require('@/assets/img/projects/Trail_Of_Crumbs-2.gif')
     },
     {
         title: 'Antithesis',
@@ -58,8 +58,8 @@ const projects = [
             'Oculus Quest & Oculus Quest 2 used for development and QA',
             'Oculus link used for asymmetric play'
         ],
-        bodyImgSrcA: require('@/assets/img/projects/Antithesis.png'),
-        bodyImgSrcB: require('@/assets/img/projects/Antithesis.png'),
+        bodyImgSrcA: require('@/assets/img/projects/Antithesis-1.png'),
+        bodyImgSrcB: require('@/assets/img/projects/Antithesis-2.png'),
         featured: true
     },
     {
@@ -80,8 +80,8 @@ const projects = [
             'Code written in C++ using Visual Studio.',
             'Some graphics assets made using GIMP.'
         ],
-        bodyImgSrcA: require('@/assets/img/projects/Fillball.png'),
-        bodyImgSrcB: require('@/assets/img/projects/Fillball.png')
+        bodyImgSrcA: require('@/assets/img/projects/Fillball-1.gif'),
+        bodyImgSrcB: require('@/assets/img/projects/Fillball-2.gif')
     },
     {
         title: 'Narcoleptic Nummies',
@@ -107,8 +107,8 @@ const projects = [
             'Music produced with SunVox.',
             'Sounds edited with Audacity.'
         ],
-        bodyImgSrcA: require('@/assets/img/projects/Narcoleptic_Nummies.png'),
-        bodyImgSrcB: require('@/assets/img/projects/Narcoleptic_Nummies.png')
+        bodyImgSrcA: require('@/assets/img/projects/Narcoleptic_Nummies-1.gif'),
+        bodyImgSrcB: null
     },
 ];
 
