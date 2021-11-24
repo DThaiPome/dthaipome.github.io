@@ -9,6 +9,7 @@
 
     #body-container {
         width: 80%;
+        min-width: 760px;
         max-width: 1200px;
         margin: auto;
         padding: 10pt;
