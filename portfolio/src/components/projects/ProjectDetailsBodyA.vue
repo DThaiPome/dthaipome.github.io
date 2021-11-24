@@ -15,11 +15,11 @@
                  v-fix-footer-on-load />
             <h3> Accomplishments </h3>
             <common-unordered-list :items="project.responsibilities" 
-                       :classes="description-text" />
+                       :classes="'description-text'" />
             <br>
             <h3> Technology Used </h3>
             <common-unordered-list :items="project.tech" 
-                       :classes="description-text" />
+                       :classes="'description-text'" />
         </div>
     </div>
 </template>
@@ -43,3 +43,7 @@ export default {
     }
 }
 </script>
+
+<style lang="less" scoped>
+@import './ProjectDetailsBody.less';
+</style>

@@ -107,8 +107,8 @@ const projects = [
             'Music produced with SunVox.',
             'Sounds edited with Audacity.'
         ],
-        bodyImgSrcA: require('@/assets/img/projects/Narcoleptic_Nummies-1.gif'),
-        bodyImgSrcB: null
+        bodyImgSrcB: require('@/assets/img/projects/Narcoleptic_Nummies-1.gif'),
+        bodyImgSrcA: null
     },
 ];
 

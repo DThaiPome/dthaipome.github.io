@@ -5,17 +5,17 @@
             <div class="description-text" v-html="project.summary" />
             <h3> Accomplishments </h3>
             <common-unordered-list :items="project.responsibilities" 
-                       :classes="description-text" />
+                       :classes="'description-text'" />
             <br>
             <h3> Technology Used </h3>
             <common-unordered-list :items="project.tech" 
-                       :classes="description-text" />
+                       :classes="'description-text'" />
         </div>
-        <img class="details-body-image" 
+        <div class="description-panel">
+            <img class="details-body-image" 
                 v-if="project.bodyImgSrcA"
                 :src="project.bodyImgSrcA" 
                 v-fix-footer-on-load />
-        <div class="description-panel">
             <img class="details-body-image" 
                  v-if="project.bodyImgSrcB"
                  :src="project.bodyImgSrcB" 
@@ -43,3 +43,7 @@ export default {
     }
 }
 </script>
+
+<style lang="less" scoped>
+@import './ProjectDetailsBody.less';
+</style>
