@@ -5,7 +5,7 @@
             <span class="project-header" v-text="project.title" />
             <div id="details-top">
                 <img id="details-image" :src="project.imgSrc" v-fix-footer-on-load />
-                <div v-html="imageCaption" />
+                <div class="image-caption" v-html="imageCaption" />
             </div>
             <hr noshade />
             <component :is="`project-details-body-${project.bodyComp}`"
@@ -44,7 +44,7 @@ export default {
             return this.$route.params.id;
         },
         imageCaption() {
-            return 'Lol click this to do stuff';
+            return this.project.imageCaption;
         }
     },
     beforeMount() {
@@ -79,5 +79,12 @@ export default {
     .project-header {
         font-size: 36px;
         font-weight: bold;
+    }
+
+    .image-caption {
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
     }
 </style>
