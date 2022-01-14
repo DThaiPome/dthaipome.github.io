@@ -3,10 +3,10 @@ const projects = [
         title: 'Trail of Crumbs',
         imgSrc: require('@/assets/img/projects/Trail_Of_Crumbs.png'),
         id: 'trail_of_crumbs',
+        index: 5,
         blurb: '3D Collab Game Project',
         bodyComp: 'a',
         imageCaption: '<a href="https://github.com/DThaiPome/trail-of-crumbs">Go to GitHub repository</a>',
-        featured: true,
         summary: '<b>Trail of Crumbs</b> is a game produced for the Game Programming class at Northeastern University. It was developed over the span of two months by a team of four programmers, including myself. It is a first-person stealth game, in which the player must use a long-reach grapple hand to pull themself to hard-to-reach areas and navigate to a target point in each level. The player must avoid the many eyes trying to find and apprehend them, like spotlights, robot guards, and an aggressive train conductor. There are several interesting ways for the player to navigate through levels, including reverse-gravity fields and a power-up that lets the player reach farther with their grapple hand. In the end, the player must thwart smuggling efforts and eventually defeat the crime boss known as Crumbs Banks.<br><br>My focus on this project was on the different ways the player interacted with each level. Among other things, I wrote code for the grapple hand, the power-ups, the reverse-gravity fields, and the color-switching lights that are seen later in the game. My primary collaborative challenge was to develop game components that could be used by my teammates, and that would be compatible with the components my teammates developed. I accomplished this by making my components single-purpose and open-ended. As an example, the player\'s grapple hand is not dependent on a specific player object, but instead can be used when paired with any Unity object. Employing this strategy in my development helped reduce the number of conflicts that arose between two different programmers, and helped us produce a game with so many features in such a short amount of time.',
         responsibilities: [
             'Applied 3D game development techniques such as path finding, finite-state machines, and vector and quaternion mathematics.',
@@ -29,6 +29,7 @@ const projects = [
         title: 'Antithesis',
         imgSrc: require('@/assets/img/projects/Antithesis.png'),
         id: 'antithesis',
+        index: 3,
         blurb: 'Large Studio VR Project',
         bodyComp: 'b',
         imageCaption: '<a href="https://drive.google.com/file/d/1NSE_AMWeBbfFcW-BmmYfYFzfArIaIpNS/view">Download build for Oculus Quest & Oculus Quest 2 (launch on Windows with Oculus Link enabled)</a>',
@@ -62,12 +63,12 @@ const projects = [
         ],
         bodyImgSrcA: require('@/assets/img/projects/Antithesis-1.png'),
         bodyImgSrcB: require('@/assets/img/projects/Antithesis-2.png'),
-        featured: true
     },
     {
         title: 'Fillball',
         imgSrc: require('@/assets/img/projects/Fillball.png'),
         id: 'fillball',
+        index: 4,
         blurb: 'Self-driven 3D Game in UE4',
         bodyComp: 'c',
         imageCaption: '<a href="https://github.com/DThaiPome/FillBall">Go to GitHub repository</a>',
@@ -90,6 +91,7 @@ const projects = [
         title: 'Narcoleptic Nummies',
         imgSrc: require('@/assets/img/projects/Narcoleptic_Nummies.png'),
         id: 'narcoleptic_nummies',
+        index: 6,
         blurb: 'GMTK Game Jam 2020',
         bodyComp: 'b',
         imageCaption: '<a href="https://kimin.itch.io/narcoleptic-nummies">Play the Game</a>',
@@ -114,6 +116,98 @@ const projects = [
         bodyImgSrcB: require('@/assets/img/projects/Narcoleptic_Nummies-1.gif'),
         bodyImgSrcA: null
     },
+    {
+        title: 'Terrain Digging Simulator',
+        imgSrc: require('@/assets/img/projects/Terrain_Digging_Simulator.png'),
+        id: 'terrain_digging_simulator',
+        featured: true,
+        index: 0,
+        blurb: 'Interactive Graphics Exploration',
+        bodyComp: 'a',
+        imageCaption: '<a href="https://kimin.itch.io/narcoleptic-nummies">Play the Game</a>',
+        summary: [
+             'Narcoleptic Nummies is a video game project made during Game Maker Tool Kit\'s Game Jam held online over the summer of 2020. The player jumps through many levels, and every ten or so seconds the level\'s layout and environment switch between being "awake" and "asleep". In addition to producing original music and sound effects, I designed and implemented the dynamic sound system that would switch between two parallel "waking" and "sleeping" versions of one original level soundtrack. I accomplished this by using Unity\'s flexible object hierarchy system alongside principles of object-oriented design, in order to make code that could be easily utilized by my teammates. The entire core functionality of this music system was wrapped under a single method, allowing for seamless integration into the game\'s core code.',
+             '<br><br>',
+             'The game went on to rank #465 in art & presentation, out of over 5000 submissions!'
+        ].join(' '),
+        responsibilities: [
+            'Produced 2 parallel versions of one original music track using SunVox, a "sleep" version and an "awake" version.',
+            'Designed & implemented a dynamic music system that switches between the "sleep" and "awake" versions of the music in response to changes made during gameplay.',
+            'Engineered a means of looping both tracks seamlessly and simultaneously, and also a means of fading smoothly between each version.',
+            'Streamlined the integration of this music system by wrapping all of this functionality under 1 C# method call in Unity.'
+        ],
+        tech: [
+            'Built objects in Unity and scripted them in C# using Visual Studio.',
+            'Music produced with SunVox.',
+            'Sounds edited with Audacity.'
+        ],
+        bodyImgSrcB: require('@/assets/img/projects/Terrain_Digging_Simulator-1.png'),
+        bodyImgSrcA: require('@/assets/img/projects/Terrain_Digging_Simulator-2.png')
+    },
+    {
+        title: 'Breakout! with C++ and SDL2',
+        imgSrc: require('@/assets/img/projects/Breakout.png'),
+        id: 'breakout',
+        featured: true,
+        index: 1,
+        blurb: 'Game Engines Exploration',
+        bodyComp: 'b',
+        imageCaption: '<a href="https://drive.google.com/file/d/1kLJm7mIE2Xf8HGOxb-ubsbob2Lp2T5NE/view?usp=sharing">Download the source code here! Can be built and played on Linux.</a>',
+        summary: [
+             'This project is a recreation of Atari\'s Breakout!, as a learning project for working with low-level tools and techniques for writing game engines. The project is written in C++ using SDL2 to render the game objects and play sounds.',
+             '<br><br>',
+             'This project is fairly stripped down, as it had a short deadline. However, I am proud of the object-oriented design that I came up with for its implementation. In summary, the game is designed in a way that isolates the behaviour for individual objects from the rest of the engine code. This allowed me to make more recyclable components, like object and resource managers, that I can use for future projects of this nature.',
+             '<br><br>',
+             'If I had more time, here are some features and mechanics I would have liked to add:',
+             '<ul>',
+             '<li>Image assets for the game objects - a resource manager already exists to make this easy, I simply need to change how the objects are rendered.</li>',
+             '<li>Different mechanics for earning points in a level - ideally, I would like to reward the player more points for breaking more bricks before the ball reaches the paddle again.</li>',
+             '<li>Multiple balls in one level - I think it would be interesting if each brick had a rare chance of spawning more balls, creating some chaos but also allowing the player to break more bricks.</li>',
+             '<li>Multiple balls in one level - I think it would be interesting if each brick had a rare chance of spawning more balls, creating some chaos but also allowing the player to break more bricks.</li>',
+             '</ul>'
+        ].join(' '),
+        responsibilities: [
+            'Composed several homemade and recyclable code components together into one game project.',
+            'Implemented game engine components at a very low level.',
+            'Applied resource management techniques to increase game performance.',
+            'Utilized several other low-level game programming techniques, including frame capping and the use of subsystems.'
+        ],
+        tech: [
+            'SDL2 for graphics and audio',
+            'Code in C++',
+            'Built for Linux'
+        ],
+        bodyImgSrcB: require('@/assets/img/projects/Breakout-1.png'),
+        bodyImgSrcA: require('@/assets/img/projects/Breakout-2.png')
+    },
+    {
+        title: 'Cupcat',
+        imgSrc: require('@/assets/img/projects/Cupcat.png'),
+        id: 'cupcat',
+        featured: true,
+        index: 2,
+        blurb: 'Week Long Game Jam',
+        bodyComp: 'c',
+        imageCaption: '<a href="https://dthaipome.itch.io/cupcat">Play the Game</a>',
+        summary: [
+             'Narcoleptic Nummies is a video game project made during Game Maker Tool Kit\'s Game Jam held online over the summer of 2020. The player jumps through many levels, and every ten or so seconds the level\'s layout and environment switch between being "awake" and "asleep". In addition to producing original music and sound effects, I designed and implemented the dynamic sound system that would switch between two parallel "waking" and "sleeping" versions of one original level soundtrack. I accomplished this by using Unity\'s flexible object hierarchy system alongside principles of object-oriented design, in order to make code that could be easily utilized by my teammates. The entire core functionality of this music system was wrapped under a single method, allowing for seamless integration into the game\'s core code.',
+             '<br><br>',
+             'The game went on to rank #465 in art & presentation, out of over 5000 submissions!'
+        ].join(' '),
+        responsibilities: [
+            'Produced 2 parallel versions of one original music track using SunVox, a "sleep" version and an "awake" version.',
+            'Designed & implemented a dynamic music system that switches between the "sleep" and "awake" versions of the music in response to changes made during gameplay.',
+            'Engineered a means of looping both tracks seamlessly and simultaneously, and also a means of fading smoothly between each version.',
+            'Streamlined the integration of this music system by wrapping all of this functionality under 1 C# method call in Unity.'
+        ],
+        tech: [
+            'Built objects in Unity and scripted them in C# using Visual Studio.',
+            'Music produced with SunVox.',
+            'Sounds edited with Audacity.'
+        ],
+        bodyImgSrcB: require('@/assets/img/projects/Cupcat-1.gif'),
+        bodyImgSrcA: require('@/assets/img/projects/Cupcat-2.png')
+    },
 ];
 
 const state = {
@@ -122,7 +216,7 @@ const state = {
 
 const getters = {
     projects: state => {
-        return state.projects;
+        return state.projects.sort((a, b) => a.index === b.index ? 0 : (a.index < b.index ? -1 : 1));
     }
 };
 
