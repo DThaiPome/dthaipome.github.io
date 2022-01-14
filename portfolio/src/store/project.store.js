@@ -6,7 +6,7 @@ const projects = [
         index: 5,
         blurb: '3D Collab Game Project',
         bodyComp: 'a',
-        imageCaption: '<a href="https://github.com/DThaiPome/trail-of-crumbs">Go to GitHub repository</a>',
+        imageCaption: '<a href="https://github.com/DThaiPome/trail-of-crumbs" target="_blank">Go to GitHub repository</a>',
         summary: '<b>Trail of Crumbs</b> is a game produced for the Game Programming class at Northeastern University. It was developed over the span of two months by a team of four programmers, including myself. It is a first-person stealth game, in which the player must use a long-reach grapple hand to pull themself to hard-to-reach areas and navigate to a target point in each level. The player must avoid the many eyes trying to find and apprehend them, like spotlights, robot guards, and an aggressive train conductor. There are several interesting ways for the player to navigate through levels, including reverse-gravity fields and a power-up that lets the player reach farther with their grapple hand. In the end, the player must thwart smuggling efforts and eventually defeat the crime boss known as Crumbs Banks.<br><br>My focus on this project was on the different ways the player interacted with each level. Among other things, I wrote code for the grapple hand, the power-ups, the reverse-gravity fields, and the color-switching lights that are seen later in the game. My primary collaborative challenge was to develop game components that could be used by my teammates, and that would be compatible with the components my teammates developed. I accomplished this by making my components single-purpose and open-ended. As an example, the player\'s grapple hand is not dependent on a specific player object, but instead can be used when paired with any Unity object. Employing this strategy in my development helped reduce the number of conflicts that arose between two different programmers, and helped us produce a game with so many features in such a short amount of time.',
         responsibilities: [
             'Applied 3D game development techniques such as path finding, finite-state machines, and vector and quaternion mathematics.',
@@ -32,7 +32,7 @@ const projects = [
         index: 3,
         blurb: 'Large Studio VR Project',
         bodyComp: 'b',
-        imageCaption: '<a href="https://drive.google.com/file/d/1NSE_AMWeBbfFcW-BmmYfYFzfArIaIpNS/view">Download build for Oculus Quest & Oculus Quest 2 (launch on Windows with Oculus Link enabled)</a>',
+        imageCaption: '<a href="https://drive.google.com/file/d/1NSE_AMWeBbfFcW-BmmYfYFzfArIaIpNS/view" target="_blank">Download build for Oculus Quest & Oculus Quest 2 (launch on Windows with Oculus Link enabled)</a>',
         summary: ['<b>Antithesis</b> is a virtual reality game that features asymmetric multiplayer gameplay, with one player using the VR headset and another player using a PC. The player on the VR headset must navigate a dark, spooky village in search of four ritual components, while the player on the PC watches them from overhead and sends monsters to defeat the player before they can complete their ritual. This project was made on a team of over 20 Northeastern University students and faculty members as part of the Fall 2020 Game Studio course.',
         '<br><br>',
         'I worked on a team of five other student developers, making regular use of Northeastern\'s VR lab for both development and QA testing. I was responsible for implementing some of the game\'s systems:',
@@ -71,7 +71,7 @@ const projects = [
         index: 4,
         blurb: 'Self-driven 3D Game in UE4',
         bodyComp: 'c',
-        imageCaption: '<a href="https://github.com/DThaiPome/FillBall">Go to GitHub repository</a>',
+        imageCaption: '<a href="https://github.com/DThaiPome/FillBall target="_blank"">Go to GitHub repository</a>',
         summary: '<b>Fillball</b> is a small, self-driven game project developed in Unreal Engine 4. The player controls a ball that can change between 4 colors by collecting small color pickups, passing through colored hoops, or pressing colored buttons. Changing the ball\'s color changes which paths are solid and passable; the player must strategically manage their current color, particularly if they wish to collect every color pickup. Through this project, I am learning how to program game behaviour and systems using C++, and I am familiarizing myself with the many features of UE4. Right now, 3 levels are planned for this project. ',
         responsibilities: [
             'Built player controls and other game components using Unreal\'s Blueprint system.',
@@ -94,7 +94,7 @@ const projects = [
         index: 6,
         blurb: 'GMTK Game Jam 2020',
         bodyComp: 'b',
-        imageCaption: '<a href="https://kimin.itch.io/narcoleptic-nummies">Play the Game</a>',
+        imageCaption: '<a href="https://kimin.itch.io/narcoleptic-nummies target="_blank"">Play the Game</a>',
         summary: [
              'Narcoleptic Nummies is a video game project made during Game Maker Tool Kit\'s Game Jam held online over the summer of 2020. The player jumps through many levels, and every ten or so seconds the level\'s layout and environment switch between being "awake" and "asleep". In addition to producing original music and sound effects, I designed and implemented the dynamic sound system that would switch between two parallel "waking" and "sleeping" versions of one original level soundtrack. I accomplished this by using Unity\'s flexible object hierarchy system alongside principles of object-oriented design, in order to make code that could be easily utilized by my teammates. The entire core functionality of this music system was wrapped under a single method, allowing for seamless integration into the game\'s core code.',
              '<br><br>',
@@ -124,35 +124,33 @@ const projects = [
         index: 0,
         blurb: 'Interactive Graphics Exploration',
         bodyComp: 'a',
-        imageCaption: '<a href="https://kimin.itch.io/narcoleptic-nummies">Play the Game</a>',
+        imageCaption: '<a href="https://github.com/DThaiPome/TerrainDiggingSimulator" target="_blank">Go to GitHub repository</a>',
         summary: [
-             'Narcoleptic Nummies is a video game project made during Game Maker Tool Kit\'s Game Jam held online over the summer of 2020. The player jumps through many levels, and every ten or so seconds the level\'s layout and environment switch between being "awake" and "asleep". In addition to producing original music and sound effects, I designed and implemented the dynamic sound system that would switch between two parallel "waking" and "sleeping" versions of one original level soundtrack. I accomplished this by using Unity\'s flexible object hierarchy system alongside principles of object-oriented design, in order to make code that could be easily utilized by my teammates. The entire core functionality of this music system was wrapped under a single method, allowing for seamless integration into the game\'s core code.',
+             'This is a project I completed for my Computer Graphics course at Northeastern University. The simulation demonstrates the use of the <a href="https://en.wikipedia.org/wiki/Marching_cubes" target="_blank">Marching Cubes algorithm</a> to dynamically generate and render a 3D mesh. Within the simulation, a user maneuver a small red object through a larger cube. As the red object moves, it carves a path through the cube. After some time, a user can carve out interesting looking terrain from the original cube.',
              '<br><br>',
-             'The game went on to rank #465 in art & presentation, out of over 5000 submissions!'
+             'This simulation serves as an iterable starting point that I could choose to explore more later, or even implement within a game. It includes the algorithm itself, as well as logic to repeatedly generate new meshes and also support for multithreading. I could potoentially use this for procedural terrain generation, or some game mechanic that involves digging into a surface.'
         ].join(' '),
         responsibilities: [
-            'Produced 2 parallel versions of one original music track using SunVox, a "sleep" version and an "awake" version.',
-            'Designed & implemented a dynamic music system that switches between the "sleep" and "awake" versions of the music in response to changes made during gameplay.',
-            'Engineered a means of looping both tracks seamlessly and simultaneously, and also a means of fading smoothly between each version.',
-            'Streamlined the integration of this music system by wrapping all of this functionality under 1 C# method call in Unity.'
+            'Implemented an iteration of the Marching Cubes algorithm that produces a mesh with smooth lighting with relatively little runtime.',
+            'Multithreaded the process to increase efficiency.',
+            'Cleanly organized code using effective abstractions on top of OpenGL.'
         ],
         tech: [
-            'Built objects in Unity and scripted them in C# using Visual Studio.',
-            'Music produced with SunVox.',
-            'Sounds edited with Audacity.'
+            'Programmed in OpenGL and C++.',
+            'SDL2 as a rendering context.'
         ],
         bodyImgSrcB: require('@/assets/img/projects/Terrain_Digging_Simulator-1.png'),
         bodyImgSrcA: require('@/assets/img/projects/Terrain_Digging_Simulator-2.png')
     },
     {
-        title: 'Breakout! with C++ and SDL2',
+        title: 'Breakout! Recreation',
         imgSrc: require('@/assets/img/projects/Breakout.png'),
         id: 'breakout',
         featured: true,
         index: 1,
         blurb: 'Game Engines Exploration',
         bodyComp: 'b',
-        imageCaption: '<a href="https://drive.google.com/file/d/1kLJm7mIE2Xf8HGOxb-ubsbob2Lp2T5NE/view?usp=sharing">Download the source code here! Can be built and played on Linux.</a>',
+        imageCaption: '<a href="https://drive.google.com/file/d/1kLJm7mIE2Xf8HGOxb-ubsbob2Lp2T5NE/view?usp=sharing" target="_blank">Download the source code here! Can be built and played on Linux.</a>',
         summary: [
              'This project is a recreation of Atari\'s Breakout!, as a learning project for working with low-level tools and techniques for writing game engines. The project is written in C++ using SDL2 to render the game objects and play sounds.',
              '<br><br>',
@@ -188,22 +186,23 @@ const projects = [
         index: 2,
         blurb: 'Week Long Game Jam',
         bodyComp: 'c',
-        imageCaption: '<a href="https://dthaipome.itch.io/cupcat">Play the Game</a>',
+        imageCaption: '<a href="https://dthaipome.itch.io/cupcat" target="_blank">Play the Game</a>',
         summary: [
-             'Narcoleptic Nummies is a video game project made during Game Maker Tool Kit\'s Game Jam held online over the summer of 2020. The player jumps through many levels, and every ten or so seconds the level\'s layout and environment switch between being "awake" and "asleep". In addition to producing original music and sound effects, I designed and implemented the dynamic sound system that would switch between two parallel "waking" and "sleeping" versions of one original level soundtrack. I accomplished this by using Unity\'s flexible object hierarchy system alongside principles of object-oriented design, in order to make code that could be easily utilized by my teammates. The entire core functionality of this music system was wrapped under a single method, allowing for seamless integration into the game\'s core code.',
+             '<b>Cupcat</b> is the product of a week long game jam as part of my Rapid Idea Prototyping course at Northeastern University, alongside three other classmates. The player takes the role of a house cat that has gotten their head stuck in a cup, and needs help from their owner to get it off. However, their owner is watching TV somewhere else in the house. Only able to see through the transparent bottom of the cup, the cat must roll their way around the house and reach the TV, so that they may distract their owner.',
              '<br><br>',
-             'The game went on to rank #465 in art & presentation, out of over 5000 submissions!'
+             'I took responsibility for managing the project as a whole, on top of developing the behaviours and graphics of the titular cat. This behaviour consisted of two primary components: the movement of the cat, and the dynamic field of view as the cat moved around and looked in different directions. I also mentored some of my teammates in game programming in Unity while they developed other parts of the game.'
         ].join(' '),
         responsibilities: [
-            'Produced 2 parallel versions of one original music track using SunVox, a "sleep" version and an "awake" version.',
-            'Designed & implemented a dynamic music system that switches between the "sleep" and "awake" versions of the music in response to changes made during gameplay.',
-            'Engineered a means of looping both tracks seamlessly and simultaneously, and also a means of fading smoothly between each version.',
-            'Streamlined the integration of this music system by wrapping all of this functionality under 1 C# method call in Unity.'
+            'Managed team responsibilities using an agile approach with small and rapid iterations',
+            'Created a dynamic field of view using Unity\'s Universal Render Pipeline',
+            'Collaborated with other students to rapidly prototype an original game design',
+            'Mentored fellow programmers in game programming concepts',
+            'Collaborated with programmers, game designers, and visual artists alike'
         ],
         tech: [
-            'Built objects in Unity and scripted them in C# using Visual Studio.',
-            'Music produced with SunVox.',
-            'Sounds edited with Audacity.'
+            'Unity for a game engine',
+            'Visual Studio and C++ for programming',
+            'Notion for collaboration and project management'
         ],
         bodyImgSrcB: require('@/assets/img/projects/Cupcat-1.gif'),
         bodyImgSrcA: require('@/assets/img/projects/Cupcat-2.png')
