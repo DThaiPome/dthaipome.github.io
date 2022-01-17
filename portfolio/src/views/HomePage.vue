@@ -17,7 +17,7 @@
 import FixFooterOnLoad from '../directives/FixFooterOnLoad';
 import CommonBody from '../components/CommonBody.vue';
 import ProjectPanels from '../components/projects/ProjectPanels.vue';
-import { mapGetters } from 'vuex';
+import content from '../assets/json/main-content';
 
 export default {
     directives: {
@@ -28,7 +28,9 @@ export default {
         ProjectPanels
     },
     computed: {
-        ...mapGetters('home', [ 'homeText' ]),
+        homeText() {
+            return content.home.intro;
+        },
         projectFilter() {
             return {
                 featured: true
