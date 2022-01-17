@@ -1,6 +1,6 @@
 <template>
     <common-body>
-        <div>
+        <div class="home-text-container">
             <p v-for="block in homeText"
                 :key="block"
                 v-text="block" />
@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    @import '../assets/style/colors';
+
     .home-header {
         font-size: 36px;
         font-weight: bold;
@@ -59,5 +61,13 @@ export default {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .home-text-container {
+        color: @TEXT-COLOR-2;
+        font-size: 16pt;
+        text-align: center;
+        width: 75%;
+        margin: auto;
     }
 </style>
