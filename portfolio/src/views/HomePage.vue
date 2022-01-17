@@ -1,10 +1,15 @@
 <template>
     <common-body>
+        <div>
+            <p v-for="block in homeText"
+                :key="block"
+                v-text="block" />
+        </div>
+        <hr noshade />
         <span class="home-header" v-text="'Featured Projects'" />
         <hr noshade />
         <project-panels :filter="projectFilter" />
-        <span class="home-header" v-text="'Work Experience'" />
-        <hr noshade />
+        <router-link :to="'/projects'" tag="div" id="all-projects-link" v-text="'See all projects 🡆'" />
     </common-body>
 </template>
 
@@ -12,6 +17,7 @@
 import FixFooterOnLoad from '../directives/FixFooterOnLoad';
 import CommonBody from '../components/CommonBody.vue';
 import ProjectPanels from '../components/projects/ProjectPanels.vue';
+import { mapGetters } from 'vuex';
 
 export default {
     directives: {
@@ -22,6 +28,7 @@ export default {
         ProjectPanels
     },
     computed: {
+        ...mapGetters('home', [ 'homeText' ]),
         projectFilter() {
             return {
                 featured: true
@@ -42,5 +49,15 @@ export default {
         height: 200px;
         margin: auto;
         margin-bottom: 30pt;
+    }
+
+    #all-projects-link {
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
     }
 </style>
