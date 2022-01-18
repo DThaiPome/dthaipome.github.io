@@ -1,10 +1,10 @@
 <template>
     <common-body class="about-container">
-        <div class="about-text">
-            <p v-for="(block, index) in aboutParagraphs" :key="index" v-text="block" />
-        </div>
         <div class="about-image">
             <img :src="aboutImage" v-fix-footer-on-load />
+        </div>
+        <div class="about-text">
+            <p v-for="(block, index) in aboutParagraphs" :key="index" v-text="block" />
         </div>
     </common-body>
 </template>
@@ -36,14 +36,6 @@ export default {
 
 <style lang="less" scoped>
     @import '../assets/style/colors';
-    
-    .about-container {
-        display: flex;
-
-        div {
-            margin: 20pt;
-        }
-    }
 
     .about-text {
         color: @TEXT-COLOR-2;
@@ -52,20 +44,23 @@ export default {
     }
     
     .about-image {
-        width: 2000pt;
+        width: 300pt;
+        margin: auto;
     }
 
     .about-image img {
         width: 100%;
+        border-radius: 30pt;
+        border: 1pt solid black;
     }
 
-    @media only screen and (max-width: 600px) {
-        .about-container {
-            display: block;
+    @media only screen and (max-width: 760px) {
+        .about-container div {
+            margin: 0;
+        }
 
-            div {
-                margin: 0;
-            }
+        .about-text {
+            font-size: 12pt;
         }
 
         .about-image {

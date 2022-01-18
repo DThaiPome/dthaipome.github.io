@@ -20,7 +20,7 @@
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
         padding: 0;
     }
 </style>

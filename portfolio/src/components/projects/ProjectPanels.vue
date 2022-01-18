@@ -3,9 +3,9 @@
         <div class="panel" v-for="panel in panels" :key="panel.id">
             <router-link :to="`/projects/${panel.id}`">
                 <img class="project-img" :src="panel.imgSrc" v-fix-footer-on-load /> <br>
-                <a v-text="panel.title" />
+                <a class="project-label" v-text="panel.title" />
             </router-link> <br>
-            <div v-text="panel.blurb" />
+            <div class="project-label project-blurb" v-text="panel.blurb" />
         </div>
     </div>
 </template>
@@ -42,12 +42,20 @@ export default {
     .panel {
         margin: auto;
         margin-bottom: 30pt;
+        margin-top: 0;
         text-align: center;
     }
 
+    .project-label {
+        display: block;
+        width: 325px;
+    }
+
     .project-img {
-        width: 375px;
-        height: 250px;
+        width: 325px;
+        height: 200px;
+        border-radius: 30pt;
+        border: 1pt solid black;
     }
 
     #projects-container {
@@ -55,19 +63,24 @@ export default {
         flex-wrap: wrap;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 760px) {
         .project-img {
-            visibility: hidden;
-            width: 0;
-            height: 0;
+            width: 100px;
+            height: 61.538px;
+            border-radius: 10pt;
         }
 
-        #projects-container {
-            display: block;
+        .project-label {
+            width: 100px;
         }
 
         .panel {
             margin-bottom: 0;
+        }
+
+        .project-blurb {
+            visibility: hidden;
+            height: 0;
         }
     }
 </style>
