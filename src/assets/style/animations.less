@@ -1,0 +1,22 @@
+@INFINITE-TIME: 10000000;
+@INFINITE-TIME-SPEED-CO: .05;
+
+.infinite-background(@bg1, @bg2, @bg3, @start, @x, @y) {
+    background-image: @bg1, 
+    @bg2, 
+    @bg3;
+    background-blend-mode: color;
+    background-attachment: fixed;
+    animation-duration: sqrt(pow(@INFINITE-TIME, 2) + pow(@INFINITE-TIME, 2)) * 1s * @INFINITE-TIME-SPEED-CO;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @keyframes move {
+        0% {
+            background-position: @start;
+        }
+        100% {
+            background-position: @INFINITE-TIME * @x @INFINITE-TIME * @y;
+        }
+    }
+}
