@@ -74,8 +74,9 @@ export default {
     }
 
     #details-image {
+        width: 100%;
         max-width: 750px;
-        height: 391px;
+        max-height: 391px;
         .rounded-img-1;
     }
 
