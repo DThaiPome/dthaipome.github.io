@@ -4,6 +4,7 @@ import HomePage from "../views/HomePage.vue";
 import AboutPage from "../views/AboutPage.vue";
 import ProjectPage from "../views/ProjectPage.vue";
 import ProjectDetails from "../views/ProjectDetails.vue";
+import ResumePage from '../views/ResumePage.vue';
 import store from '../store/index';
 import { 
   SET_HEADER_SHOW_HEADER,
@@ -32,6 +33,11 @@ const routes = [
     path: "/projects/:id",
     name: "Project Details",
     component: ProjectDetails
+  },
+  {
+    path: "/resume",
+    name: "Resume",
+    component: ResumePage
   }
 ];
 

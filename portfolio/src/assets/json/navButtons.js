@@ -10,5 +10,9 @@ export default [
     {
         label: 'Projects',
         route: '/projects'
+    },
+    {
+        label: 'Resume',
+        route: '/resume'
     }
 ];
