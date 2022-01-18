@@ -45,7 +45,7 @@ router.afterEach((to) => {
 
 function updateHeaderVisibility(toName) {
   const pagesWithHeaderTitle = [
-      'Home', 'About', 'Projects'
+      'Home'
   ];
   const pagesWithoutHeader = [];
   store.commit(`global/${SET_HEADER_SHOW_TITLE}`, pagesWithHeaderTitle.includes(toName));

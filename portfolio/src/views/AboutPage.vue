@@ -59,4 +59,19 @@ export default {
         width: 100%;
     }
 
+    @media only screen and (max-width: 600px) {
+        .about-container {
+            display: block;
+
+            div {
+                margin: 0;
+            }
+        }
+
+        .about-image {
+            visibility: hidden;
+            width: 0;
+        }
+    }
+
 </style>

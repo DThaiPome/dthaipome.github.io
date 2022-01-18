@@ -8,7 +8,6 @@
     @import '../assets/style/colors';
 
     #body-container {
-        min-width: 760px;
         max-width: 1200px;
         margin: auto;
         padding: 10pt;
@@ -19,5 +18,9 @@
         hr {
             color: @BORDER-COLOR;
         }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 0;
     }
 </style>

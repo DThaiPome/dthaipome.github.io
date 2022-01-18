@@ -1,15 +1,15 @@
 <template>
     <common-body>
+        <span class="home-header" v-text="'Featured Projects'" />
+        <hr noshade />
+        <project-panels :filter="projectFilter" />
+        <router-link :to="'/projects'" tag="div" id="all-projects-link" v-text="'See all projects 🡆'" />
+        <hr noshade />
         <div class="home-text-container">
             <p v-for="block in homeText"
                 :key="block"
                 v-text="block" />
         </div>
-        <hr noshade />
-        <span class="home-header" v-text="'Featured Projects'" />
-        <hr noshade />
-        <project-panels :filter="projectFilter" />
-        <router-link :to="'/projects'" tag="div" id="all-projects-link" v-text="'See all projects 🡆'" />
     </common-body>
 </template>
 
@@ -59,6 +59,7 @@ export default {
         font-size: 24px;
         text-align: center;
         cursor: pointer;
+        margin-top: 10pt;
         
         &:hover {
             text-decoration: underline;
@@ -71,5 +72,16 @@ export default {
         text-align: center;
         width: 75%;
         margin: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .home-text-container {
+            width: 100%;
+            font-size: 12pt;
+        }
+        
+        #all-projects-link {
+            text-decoration: underline;
+        }
     }
 </style>

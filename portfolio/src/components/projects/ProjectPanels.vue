@@ -54,4 +54,20 @@ export default {
         display: flex;
         flex-wrap: wrap;
     }
+
+    @media only screen and (max-width: 600px) {
+        .project-img {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        #projects-container {
+            display: block;
+        }
+
+        .panel {
+            margin-bottom: 0;
+        }
+    }
 </style>
