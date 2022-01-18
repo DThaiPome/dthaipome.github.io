@@ -34,4 +34,16 @@ export default {
             background: rgb(27, 27, 27);
         }
     }
+
+    @media only screen and (max-width: 760px) {
+        .nav-button-container {
+            .nav-button {
+                background: none;
+            }
+
+            :hover .nav-button {
+                background: none;
+            }
+        }
+    }
 </style>

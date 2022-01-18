@@ -3,16 +3,21 @@
             <div v-if="headerShowTitle" class="header-title">Ryan Gehrlein</div>
             <div v-if="headerShowTitle" class="subheader-title">Game Programmer &amp; Software Engineer</div>
             <hr v-if="headerShowTitle" noshade>
-            <header-nav-toolbar/>
+            <header-nav-toolbar class="desktop-nav"/>
+            <header-nav-mobile-dropdown class="mobile-nav"/>
         </div>
 </template>
 
 <script>
 import HeaderNavToolbar from './HeaderNavToolbar.vue';
+import HeaderNavMobileDropdown from './HeaderNavMobileDropdown.vue'
 import { mapGetters } from 'vuex';
 
 export default {
-  components: { HeaderNavToolbar },
+    components: { 
+        HeaderNavToolbar,
+        HeaderNavMobileDropdown
+    },
     props: {
         pageName: {
             type: String,
@@ -58,6 +63,24 @@ export default {
 
         hr {
             color: @BORDER-COLOR;
+        }
+    }
+
+    .desktop-nav {
+        visibility: visible;
+    }
+
+    .mobile-nav {
+        visibility: hidden;
+    }
+
+    @media only screen and (max-width: 760px) {
+        .desktop-nav {
+            visibility: hidden;
+        }
+
+        .mobile-nav {
+            visibility: visible;
         }
     }
 </style>
