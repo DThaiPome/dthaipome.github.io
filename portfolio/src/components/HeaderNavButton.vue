@@ -37,8 +37,18 @@ export default {
 
     @media only screen and (max-width: 760px) {
         .nav-button-container {
+            display: block;
+            width: 100%;
+            height: 100%;
+
             .nav-button {
                 background: none;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                border-radius: none;
             }
 
             :hover .nav-button {

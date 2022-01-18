@@ -3,8 +3,8 @@
             <div v-if="headerShowTitle" class="header-title">Ryan Gehrlein</div>
             <div v-if="headerShowTitle" class="subheader-title">Game Programmer &amp; Software Engineer</div>
             <hr v-if="headerShowTitle" noshade>
-            <header-nav-toolbar class="desktop-nav"/>
-            <header-nav-mobile-dropdown class="mobile-nav"/>
+            <header-nav-toolbar class="desktop-nav" v-if="!isMobileView" />
+            <header-nav-mobile-dropdown class="mobile-nav" v-if="isMobileView"/>
         </div>
 </template>
 
@@ -24,11 +24,28 @@ export default {
             default: ''
         }
     },
+    data() {
+        return {
+            isMobileView: false
+        };
+    },
     computed: {
         ...mapGetters('global', [
             'headerShowTitle',
             'headerShowHeader'
         ])
+    },
+    mounted() {
+        this.onResize();
+        window.addEventListener('resize', this.onResize);
+    },
+    unmounted() {
+        window.addEventListener('resize', this.onResize);
+    },
+    methods: {
+        onResize() {
+            this.isMobileView = window.innerWidth <= 760;
+        }
     }
 }
 </script>
@@ -50,7 +67,7 @@ export default {
         margin: auto;
         margin-bottom: 15pt;
         padding: 10pt;
-        overflow: hidden;
+        overflow: visible;
 
         .header-title {
             font-weight: bolder;
