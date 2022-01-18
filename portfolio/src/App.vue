@@ -62,18 +62,13 @@ export default {
 @import './assets/style/animations';
 
 body {
-  background-image: url('./assets/trippy background-small.png'), 
-    url('./assets/trippy background-smaller.png'), 
-    url('./assets/trippy background.png');
-  background-blend-mode: color;
-  background-attachment: fixed;
+  .infinite-background(
+    url('./assets/img/backgrounds/trippy background-small.png'),
+    url('./assets/img/backgrounds/trippy background-smaller.png'),
+    url('./assets/img/backgrounds/trippy background.png'),
+    0 0, 1pt, 1pt);
   color: @TEXT-COLOR;
   margin: 0pt;
-
-  animation-duration: sqrt(pow(@INFINITE-TIME, 2) + pow(@INFINITE-TIME, 2)) * 1s * @INFINITE-TIME-SPEED-CO;
-  animation-name: move;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 
   height: 100%;
 }
@@ -83,14 +78,5 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   width: 100%;
   height: 100%;
-}
-
-@keyframes move {
-  0% {
-    background-position: 0pt 0pt;
-  }
-  100% {
-    background-position: @INFINITE-TIME * 1pt @INFINITE-TIME * 1pt;
-  }
 }
 </style>

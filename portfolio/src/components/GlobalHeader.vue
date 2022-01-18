@@ -30,10 +30,15 @@ export default {
 
 <style lang='less' scoped>
     @import '../assets/style/colors';
+    @import '../assets/style/animations';
 
     .header-container {
         text-align: center;
-        background-color: @BG-COLOR;
+        .infinite-background(
+            url('../assets/img/backgrounds/subtle background-small.png'),
+            url('../assets/img/backgrounds/subtle background-smaller.png'),
+            url('../assets/img/backgrounds/subtle background.png'),
+            0 0, -2pt, -1pt);
         border: 4pt solid @BORDER-COLOR;
         border-radius: 40pt;
         width: auto;
