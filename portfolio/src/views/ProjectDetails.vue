@@ -64,6 +64,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    @import '../assets/style/mixins';
+
     #details-top {
         width: 100%;
         display: flex;
@@ -74,6 +76,7 @@ export default {
     #details-image {
         max-width: 750px;
         height: 391px;
+        .rounded-img-1;
     }
 
     .project-header {

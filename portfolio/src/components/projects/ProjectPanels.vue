@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+    @import '../../assets/style/mixins';
+
     .panel {
         margin: auto;
         margin-bottom: 30pt;
@@ -54,8 +56,7 @@ export default {
     .project-img {
         width: 325px;
         height: 200px;
-        border-radius: 30pt;
-        border: 1pt solid black;
+        .rounded-img-1;
     }
 
     #projects-container {
@@ -67,7 +68,7 @@ export default {
         .project-img {
             width: 100px;
             height: 61.538px;
-            border-radius: 10pt;
+            .rounded-img-2;
         }
 
         .project-label {

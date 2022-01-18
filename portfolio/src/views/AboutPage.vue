@@ -36,6 +36,7 @@ export default {
 
 <style lang="less" scoped>
     @import '../assets/style/colors';
+    @import '../assets/style/mixins';
 
     .about-text {
         color: @TEXT-COLOR-2;
@@ -50,8 +51,7 @@ export default {
 
     .about-image img {
         width: 100%;
-        border-radius: 30pt;
-        border: 1pt solid black;
+        .rounded-img-1;
     }
 
     @media only screen and (max-width: 760px) {
